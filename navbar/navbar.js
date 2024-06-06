@@ -31,7 +31,7 @@ document.write(`
 </header>
 <nav class = "navbarContainer">
     <div class = "navbar">
-        <a id = "bHome" title = "Homepage" href = "${rootPath}/index.html"> Home </a>
+        <a id = "bHome" title = "Homepage" href = "${rootPath}index.html"> Home </a>
         <div class = "dropdownContainer" onclick = lockMenu("dAbout") onmouseover = showMenu("dAbout") onmouseout = hideMenu("dAbout")>
             <button class = "dropdownButton" id = "bAbout" title = "All About Us"> About Us </button> 
             <div class = "dropdownContent" id = "dAbout">
