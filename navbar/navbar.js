@@ -6,14 +6,14 @@
 document.write(`
 <header>
 <span class = "unselectable" title = "Schoolʼs Name and Logo">
-    <img title = "Our Schoolʼs Logo" src = "${pathToMediaSupport}sps-logo.png" alt = "SPS Logo" style = "float: left; height: 55px; margin: 5px;">
+    <img title = "Our Schoolʼs Logo" src = "${rootPath}media-support/sps-logo.png" alt = "SPS Logo" style = "float: left; height: 55px; margin: 5px;">
     <span style = "display: inline-block; font-size: xx-large;">
         St. Peterʼs Sr. Sec. School
         <span style = "display: block; font-size: large;"> Bharatpur (Rajasthan) </span>
     </span>
 </span>
 <span title = "CBSE Affiliation Information">
-    <img class = "unselectable" src = "${pathToMediaSupport}info-icon.svg" alt = "Information Icon" style = "margin: 10px; vertical-align: middle;">
+    <img class = "unselectable" src = "${rootPath}media-support/info-icon.svg" alt = "Information Icon" style = "margin: 10px; vertical-align: middle;">
     <span style = "display: inline-block; vertical-align: middle; line-height: 25px;">
         Affiliated to CBSE <br>
         Affiliation No.: 1730118 <br>
@@ -21,7 +21,7 @@ document.write(`
     </span>
 </span>
 <span id = "headerContactUs" title = "Contact Us">
-    <img class = "unselectable" src = "${pathToMediaSupport}person-icon.svg" alt = "Information Icon" style = "margin: 10px; vertical-align: middle;">
+    <img class = "unselectable" src = "${rootPath}media-support/person-icon.svg" alt = "Information Icon" style = "margin: 10px; vertical-align: middle;">
     <span style = "display: inline-block; vertical-align: middle; line-height: 25px;">
         Phone: <a href = "tel:+915644222700"> (+91) 56442 22700 </a> <br>
         E-mail: <a href = "mailto:stpetersbharatpur@gmail.com"> stpetersbharatpur@gmail.com </a> <br>
@@ -31,7 +31,7 @@ document.write(`
 </header>
 <nav class = "navbarContainer">
     <div class = "navbar">
-        <a id = "bHome" title = "Homepage" href = "/"> Home </a>
+        <a id = "bHome" title = "Homepage" href = "${rootPath}/index.html"> Home </a>
         <div class = "dropdownContainer" onclick = lockMenu("dAbout") onmouseover = showMenu("dAbout") onmouseout = hideMenu("dAbout")>
             <button class = "dropdownButton" id = "bAbout" title = "All About Us"> About Us </button> 
             <div class = "dropdownContent" id = "dAbout">
