@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "Galvji";
+    src: url("media-support/galvji.ttc");
+}
+body {
+    font-family: "Galvji", sans-serif;
+    margin: 0px;
+    color: black;
+    background-color: white;
+}
