@@ -44,12 +44,13 @@ header > span {
 .dropdownContainer {
     float: left;
     overflow: hidden;
+    background-color: white;
 }
 .dropdownButton {
     font-size: inherit;
     font-family: inherit;
     color: white;
-    background-color: transparent;
+    background-color: coral;
     cursor: pointer;
     border: none;
     padding: 14px 20px;
