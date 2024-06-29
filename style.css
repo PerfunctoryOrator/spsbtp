@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Galvji";
-    src: url("media-support/galvji.ttc");
+    src: url("/media-support/galvji.ttc");
 }
 body {
     font-family: "Galvji", sans-serif;

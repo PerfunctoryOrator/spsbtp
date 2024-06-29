@@ -1,4 +1,3 @@
-// to add: footer
 // currently open webpage (menu) > color: black; background-color: peachpuff;
 // currently open webpage (dropdown) > background-color: whitesmoke;
 // currently open webpageʼs parent button > color: black; background-color: cornsilk;
@@ -54,14 +53,14 @@ function lockMenu(id) {
 
 document.write(`<header class = "unselectable">
     <span title = "Schoolʼs Name and Logo">
-        <img id = "logo" src = "${rootPath}media-support/sps-logo.png" alt = "SPS Logo" style = "float: left; height: 55px; margin: 5px;">
+        <img id = "logo" src = "/spsbtp/media-support/sps-logo.png" alt = "SPS Logo" style = "float: left; height: 55px; margin: 5px;">
         <span style = "display: inline-block; font-size: xx-large;">
             St. Peterʼs Sr. Sec. School
             <span style = "display: block; font-size: large;"> Bharatpur (Rajasthan) </span>
         </span>
     </span>
     <span title = "CBSE Affiliation Information">
-        <img src = "${rootPath}media-support/black/info-icon.svg" alt = "Information Icon" style = "margin: 10px; vertical-align: middle;">
+        <img src = "/spsbtp/media-support/black/info-icon.svg" alt = "Information Icon" style = "margin: 10px; vertical-align: middle;">
         <span style = "display: inline-block; vertical-align: middle; line-height: 25px;">
             Affiliated to CBSE <br>
             Affiliation No.: <span id = "affiliationNo" title = "Click to Copy to Clipboard" onclick = copyText("affiliationNo")> 1730118 </span> <br>
@@ -69,7 +68,7 @@ document.write(`<header class = "unselectable">
         </span>
     </span>
     <span id = "headerContactUs" title = "Contact Us">
-        <img src = "${rootPath}media-support/black/person-icon.svg" alt = "Information Icon" style = "margin: 10px; vertical-align: middle;">
+        <img src = "/spsbtp/media-support/black/person-icon.svg" alt = "Information Icon" style = "margin: 10px; vertical-align: middle;">
         <span style = "display: inline-block; vertical-align: middle; line-height: 25px;">
             Phone: <a title = "Click to Call" href = "tel:+915644222700"> (+91) 56442 22700 </a> <br>
             E-mail: <a title = "Click to E-mail" href = "mailto:stpetersbharatpur@gmail.com"> stpetersbharatpur@gmail.com </a> <br>
