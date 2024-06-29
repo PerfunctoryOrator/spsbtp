@@ -79,7 +79,7 @@ document.write(`<header class = "unselectable">
 </header>
 <nav class = "unselectable" id = "navbarContainer">
     <div id = "navbar">
-        <a id = "bHome" title = "Homepage" href = "index.html"> Home </a>
+        <a id = "bHome" title = "Homepage" href = "/"> Home </a>
         <div class = "dropdownContainer" onclick = lockMenu("dAbout") onmouseover = showMenu("dAbout") onmouseout = hideMenu("dAbout")>
             <button class = "dropdownButton" id = "bAbout" title = "All About Us"> About Us </button> 
             <div class = "dropdownContent" id = "dAbout">
