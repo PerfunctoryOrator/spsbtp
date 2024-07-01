@@ -2,55 +2,6 @@
 // currently open webpage (dropdown) > background-color: whitesmoke;
 // currently open webpageʼs parent button > color: black; background-color: cornsilk;
 
-const dMenus = ["dAbout", "dAdmissions", "dAcademics", "dSchoolLife", "dNewsEvents"];
-const dMenuHeights = ["196px", "147px", "147px", "196px", "147px"];
-let dMenuLocked = [0, 0, 0, 0, 0];
-
-function copyText(id) {navigator.clipboard.writeText(document.getElementById(id).innerText);}
-function hideAllMenus() {
-    for (let id of dMenus) {
-        let idButton = "b" + id.slice(1);
-        if (idButton == currentMenu) {
-            document.getElementById(idButton).style.backgroundColor = "cornsilk";
-        } else {
-            document.getElementById(idButton).style.color = "";
-            document.getElementById(idButton).style.backgroundColor = "";
-        }
-        document.getElementById(id).style.height = "";
-    }
-}
-function showMenu(id) {
-    if (!dMenuLocked.includes(1)) {
-        let idButton = "b" + id.slice(1);
-        document.getElementById(idButton).style.color = "black";
-        document.getElementById(idButton).style.backgroundColor = "cornsilk";
-        document.getElementById(id).style.height = dMenuHeights[dMenus.indexOf(id)];
-    }
-}
-function hideMenu(id) {
-    if (dMenuLocked[dMenus.indexOf(id)] == 0) {
-        let idButton = "b" + id.slice(1);
-        if (idButton != currentMenu) {
-            document.getElementById(idButton).style.color = "";
-            document.getElementById(idButton).style.backgroundColor = "";
-        }
-        document.getElementById(id).style.height = "";
-    }
-}
-function lockMenu(id) {
-    const i = dMenus.indexOf(id);
-    const menuLockStatus = dMenuLocked[i];
-    dMenuLocked = [0, 0, 0, 0, 0, 0];
-    dMenuLocked[i] = 1 - menuLockStatus;
-    hideAllMenus();
-    if (menuLockStatus == 0) { // if menuLockStatus == 0, then after *see 2 lines above (currentLine - 2)*, it has to be shown
-        let idButton = "b" + id.slice(1);
-        document.getElementById(idButton).style.color = "black";
-        document.getElementById(idButton).style.backgroundColor = "peachpuff"; // to indicate that dropdown is locked
-        document.getElementById(id).style.height = dMenuHeights[dMenus.indexOf(id)];
-    }
-}
-
 document.write(`<header class = "unselectable">
     <span title = "Schoolʼs Name and Logo">
         <img id = "logo" src = "/spsbtp/media-support/sps-logo.png" alt = "SPS Logo" style = "float: left; height: 55px; margin: 5px;">
@@ -124,6 +75,61 @@ document.write(`<header class = "unselectable">
         <a id = "bMandatoryDisclosure" title = "Public Disclosure, as mandated by CBSE" href = "" style = "float: right;"> Mandatory Public Disclosure </a>
     </div>
 </nav>`);
+
+const dMenus = ["dAbout", "dAdmissions", "dAcademics", "dSchoolLife", "dNewsEvents"];
+let dMenuLocked = [0, 0, 0, 0, 0];
+const dMenuHeights = [];
+for (let id of dMenus) {
+    let element = document.getElementById(id);
+    element.style.height = "max-content";
+    dMenuHeights.push(getComputedStyle(element).getPropertyValue("height"));
+    element.style.height = "";
+}
+
+function copyText(id) {navigator.clipboard.writeText(document.getElementById(id).innerText);}
+function hideAllMenus() {
+    for (let id of dMenus) {
+        if ("b" + id.slice(1) == currentMenu) {
+            document.getElementById(idButton).style.backgroundColor = "cornsilk";
+        } else {
+            document.getElementById(idButton).style.color = "";
+            document.getElementById(idButton).style.backgroundColor = "";
+        }
+        document.getElementById(id).style.height = "";
+    }
+}
+function showMenu(id) {
+    if (!dMenuLocked.includes(1)) {
+        let idButton = "b" + id.slice(1);
+        document.getElementById(idButton).style.color = "black";
+        document.getElementById(idButton).style.backgroundColor = "cornsilk";
+        document.getElementById(id).style.height = dMenuHeights[dMenus.indexOf(id)];
+    }
+}
+function hideMenu(id) {
+    if (dMenuLocked[dMenus.indexOf(id)] == 0) {
+        let idButton = "b" + id.slice(1);
+        if (idButton != currentMenu) {
+            document.getElementById(idButton).style.color = "";
+            document.getElementById(idButton).style.backgroundColor = "";
+        }
+        document.getElementById(id).style.height = "";
+    }
+}
+function lockMenu(id) {
+    const i = dMenus.indexOf(id);
+    const menuLockStatus = dMenuLocked[i];
+    dMenuLocked = [0, 0, 0, 0, 0, 0];
+    dMenuLocked[i] = 1 - menuLockStatus;
+    hideAllMenus();
+    if (menuLockStatus == 0) { // if menuLockStatus == 0, then after *see 2 lines above (currentLine - 2)*, it has to be shown
+        let idButton = "b" + id.slice(1);
+        document.getElementById(idButton).style.color = "black";
+        document.getElementById(idButton).style.backgroundColor = "peachpuff"; // to indicate that dropdown is locked
+        document.getElementById(id).style.height = dMenuHeights[dMenus.indexOf(id)];
+    }
+}
+
 document.addEventListener("click", function(event) {
     if (!(dMenus.includes("d" + event.target.id.slice(1)) || dMenus.includes(event.target.id))) {
         dMenuLocked = [0, 0, 0, 0, 0, 0];
