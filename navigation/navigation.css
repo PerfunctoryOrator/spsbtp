@@ -58,7 +58,7 @@ header > span {
 }
 .dropdownButton::after {
     margin-left: 4px;
-    font-size: 10px;
+    font-size: 12px;
     content: "▼";
 }
 .dropdownContent {
