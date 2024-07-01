@@ -58,7 +58,6 @@ header > span {
 }
 .dropdownButton::after {
     margin-left: 4px;
-    font-family: "Galvji";
     font-size: 10px;
     content: "▼";
 }
