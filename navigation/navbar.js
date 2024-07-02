@@ -89,7 +89,8 @@ for (let id of dMenus) {
 function copyText(id) {navigator.clipboard.writeText(document.getElementById(id).innerText);}
 function hideAllMenus() {
     for (let id of dMenus) {
-        if ("b" + id.slice(1) == currentMenu) {
+        idButton = "b" + id.slice(1);
+        if (idButton == currentMenu) {
             document.getElementById(idButton).style.backgroundColor = "cornsilk";
         } else {
             document.getElementById(idButton).style.color = "";
