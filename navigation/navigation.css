@@ -150,12 +150,3 @@ footer {
 .footerBar > a:hover {
     text-decoration: underline;
 }
-@media (max-width: 1094px), (max-height: 449px) {
-    body * {display: none;}
-    body::after {
-        content: "This Page is not Mobile-Friendly... Open this Page on a Desktop to view it.";
-        font-size: large;
-        text-align: center;
-        vertical-align: middle;
-    }
-}
