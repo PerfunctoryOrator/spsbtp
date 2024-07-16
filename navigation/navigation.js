@@ -29,7 +29,7 @@ document.write(`<header class = "unselectable">
 </header>
 <nav class = "unselectable" id = "navbarContainer">
     <div id = "navbar">
-        <a id = "bHome" title = "Homepage" href = "/spsbtp/"> Home </a>
+        <a id = "bHome" title = "Homepage" href = "/#"> Home </a>
         <div class = "dropdownContainer" onclick = lockMenu("dAbout") onmouseover = showMenu("dAbout") onmouseout = hideMenu("dAbout")>
             <button class = "dropdownButton" id = "bAbout" title = "All About Us"> About Us </button> 
             <div class = "dropdownContent" id = "dAbout">
@@ -86,7 +86,9 @@ for (let id of dMenus) {
     element.style.height = "";
 }
 
-function copyText(id) {navigator.clipboard.writeText(document.getElementById(id).innerText);}
+function copyText(id) {
+    navigator.clipboard.writeText(document.getElementById(id).innerText);
+}
 function hideAllMenus() {
     for (let id of dMenus) {
         idButton = "b" + id.slice(1);
@@ -129,6 +131,9 @@ function lockMenu(id) {
         document.getElementById(idButton).style.backgroundColor = "peachpuff"; // to indicate that dropdown is locked
         document.getElementById(id).style.height = dMenuHeights[dMenus.indexOf(id)];
     }
+}
+function toggleOpacity(id) {
+    document.getElementById(id).style.opacity = 1 - document.getElementById(id).style.opacity;
 }
 
 document.addEventListener("click", function(event) {
