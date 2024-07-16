@@ -1,7 +1,3 @@
-// currently open webpage (menu) > color: black; background-color: peachpuff;
-// currently open webpage (dropdown) > background-color: whitesmoke;
-// currently open webpageʼs parent button > color: black; background-color: cornsilk;
-
 document.write(`<header class = "unselectable">
     <span title = "Schoolʼs Name and Logo">
         <img src = "/spsbtp/media-support/sps-logo.png" alt = "SPS Logo" style = "float: left; height: 55px; margin: 5px;">
