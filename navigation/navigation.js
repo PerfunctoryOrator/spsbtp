@@ -4,7 +4,7 @@
 
 document.write(`<header class = "unselectable">
     <span title = "Schoolʼs Name and Logo">
-        <img id = "logo" src = "/spsbtp/media-support/sps-logo.png" alt = "SPS Logo" style = "float: left; height: 55px; margin: 5px;">
+        <img src = "/spsbtp/media-support/sps-logo.png" alt = "SPS Logo" style = "float: left; height: 55px; margin: 5px;">
         <span style = "display: inline-block; font-size: xx-large;">
             St. Peterʼs Sr. Sec. School
             <span style = "display: block; font-size: large;"> Bharatpur (Rajasthan) </span>
