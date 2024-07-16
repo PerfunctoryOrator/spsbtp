@@ -25,7 +25,7 @@ body {
     bottom: 90px;
     color: black;
     font-size: 32px;
-    background-color: peachpuff;
+    background-color: cornsilk;
     width: 50px;
     border-radius: 50%;
     opacity: 0;
@@ -33,7 +33,10 @@ body {
     text-align: center;
     vertical-align: middle;
     text-decoration: none;
-    transition: opacity 0.2s ease-out;
+    transition: background-color 0.2s ease-out, opacity 0.2s ease-out;
+}
+#scrollTop:hover {
+    background-color: peachpuff;
 }
 /* @media (max-width: 1094px), (max-height: 449px) {
     body * {display: none;}

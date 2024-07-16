@@ -29,50 +29,50 @@ document.write(`<header class = "unselectable">
 </header>
 <nav class = "unselectable" id = "navbarContainer">
     <div id = "navbar">
-        <a id = "bHome" title = "Homepage" href = "/spsbtp/#"> Home </a>
+        <a title = "Homepage" href = "/spsbtp/#"> Home </a>
         <div class = "dropdownContainer" onclick = lockMenu("dAbout") onmouseover = showMenu("dAbout") onmouseout = hideMenu("dAbout")>
             <button class = "dropdownButton" id = "bAbout" title = "All About Us"> About Us </button> 
             <div class = "dropdownContent" id = "dAbout">
-                <a id = "aHistory" title = "Our History" href = ""> Our History </a>
-                <a id = "aInfrastructure" title = "School Infrastructure" href = ""> Infrastructure </a>
-                <a id = "aManagement" title = "School Management Committee" href = ""> Management Committee </a>
-                <a id = "aFaculty" title = "Teaching Faculty" href = ""> Teaching Faculty </a>
+                <a title = "Our History" href = ""> Our History </a>
+                <a title = "School Infrastructure" href = ""> Infrastructure </a>
+                <a title = "School Management Committee" href = ""> Management Committee </a>
+                <a title = "Teaching Faculty" href = ""> Teaching Faculty </a>
             </div>
         </div>
         <div class = "dropdownContainer" onclick = lockMenu("dAdmissions") onmouseover = showMenu("dAdmissions") onmouseout = hideMenu("dAdmissions")>
             <button class = "dropdownButton" id = "bAdmissions" title = "Everything related to Admissions"> Admissions </button>
             <div class = "dropdownContent" id = "dAdmissions">
-                <a id = "aAdmissionPolicy" title = "Conditions for Admission of a Child" href = ""> Admission Policy </a>
-                <a id = "aFee" title = "Pattern for Quarterly Payment of Studentsʼ Fees" href = ""> Fee Structure </a>
-                <a id = "aBooks" title = "Prescribed Books for All Classes" href = ""> Book List </a>
+                <a title = "Conditions for Admission of a Child" href = ""> Admission Policy </a>
+                <a title = "Pattern for Quarterly Payment of Studentsʼ Fees" href = ""> Fee Structure </a>
+                <a title = "Prescribed Books for All Classes" href = ""> Book List </a>
             </div>
         </div>
         <div class = "dropdownContainer" onclick = lockMenu("dAcademics") onmouseover = showMenu("dAcademics") onmouseout = hideMenu("dAcademics")>
             <button class = "dropdownButton" id = "bAcademics" title = "Academic Policies"> Academics </button>
             <div class = "dropdownContent" id = "dAcademics">
-                <a id = "aCalendar" title = "Pre-Planned Events and Functions" href = ""> Annual Calendar </a>
-                <a id = "aLibraryRules" title = "Rules to be followed in the Library" href = ""> Library Rules </a>
-                <a id = "aResults" title = "Results of Our Schoolʼs CBSE Annual Examination Attendees" href = ""> Results </a>
+                <a title = "Pre-Planned Events and Functions" href = ""> Annual Calendar </a>
+                <a title = "Rules to be followed in the Library" href = ""> Library Rules </a>
+                <a title = "Results of Our Schoolʼs CBSE Annual Examination Attendees" href = ""> Results </a>
             </div>
         </div>
         <div class = "dropdownContainer" onclick = lockMenu("dSchoolLife") onmouseover = showMenu("dSchoolLife") onmouseout = hideMenu("dSchoolLife")>
             <button class = "dropdownButton" id = "bSchoolLife" title = "Discover More About Student Life at Our School"> School Life </button>
             <div class = "dropdownContent" id = "dSchoolLife">
-                <a id = "aTimingsUniform" title = "School Timings, and the Prescribed Uniform for Students" href = ""> Timings and Uniform </a>
-                <a id = "aStudentGuidelines" title = "Guidelines for Studentsʼ Betterment" href = ""> Guidelines for Students </a>
-                <a id = "aPrayersAnthem" title = "Daily Prayers and School Anthem" href = ""> Prayers and Anthem </a>
-                <a id = "aHolidays" title = "List of All Holidays in the Current Session" href = ""> Holiday List </a>
+                <a title = "School Timings, and the Prescribed Uniform for Students" href = ""> Timings and Uniform </a>
+                <a title = "Guidelines for Studentsʼ Betterment" href = ""> Guidelines for Students </a>
+                <a title = "Daily Prayers and School Anthem" href = ""> Prayers and Anthem </a>
+                <a title = "List of All Holidays in the Current Session" href = ""> Holiday List </a>
             </div>
         </div>
         <div class = "dropdownContainer" onclick = lockMenu("dNewsEvents") onmouseover = showMenu("dNewsEvents") onmouseout = hideMenu("dNewsEvents")>
             <button class = "dropdownButton" id = "bNewsEvents" title = "Latest News & Upcoming School Events"> News & Events </button>
             <div class = "dropdownContent" id = "dNewsEvents">
-                <a id = "aNews" title = "Latest News regarding the School" href = ""> News </a>
-                <a id = "aEvents" title = "Upcoming School Events" href = ""> Upcoming Events </a>
-                <a id = "aAnnualReports" title = "Annual Reports of All Activities performed Yearly" href = ""> Annual Reports </a>
+                <a title = "Latest News regarding the School" href = ""> News </a>
+                <a title = "Upcoming School Events" href = ""> Upcoming Events </a>
+                <a title = "Annual Reports of All Activities performed Yearly" href = ""> Annual Reports </a>
             </div>
         </div>
-        <a id = "bMandatoryDisclosure" title = "Public Disclosure, as mandated by CBSE" href = "" style = "float: right;"> Mandatory Public Disclosure </a>
+        <a title = "Public Disclosure, as mandated by CBSE" href = "" style = "float: right;"> Mandatory Public Disclosure </a>
     </div>
 </nav>`);
 
