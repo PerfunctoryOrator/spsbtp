@@ -44,11 +44,11 @@ document.write(`<footer class = "unselectable" onmouseenter = toggleOpacity("scr
 </nav>
 <nav class = "footerBar">
     <hr color = "white" size = "2px">
-    <a title = "" href = ""> Site Map </a>
-    <a title = "" href = ""> Official School Website </a>
-    <a title = "" href = ""> Agra Archdiocese </a>
-    <a title = "" href = ""> Yashdeep Singh Fauzdar </a> <!-- Yashdeep Singh Fauzdarʼs Personal Webpage -->
-    <a title = "" href = ""> Copyright Disclaimer </a> <!-- Also include Source Code -->
+    <a title = "Map of the Website" href = ""> Site Map </a>
+    <a title = "Official Website of St. Peterʼs School, Bharatpur" href = ""> Official School Website </a>
+    <a title = "Official Website of the Agra Archdiocese, this Schoolʼs Parent Organisation" href = ""> Agra Archdiocese </a>
+    <a title = "Yashdeep Singh Fauzdarʼs Personal Webpage" href = ""> Yashdeep Singh Fauzdar </a>
+    <a title = "This Website has been developed by Yashdeep Singh Fauzdar for his School Project" href = ""> Copyright Disclaimer </a> <!-- Also include Source Code (link) -->
     <span style = "float: right; margin: 16px 20px;"> India </span>
 </nav>
 </footer>
