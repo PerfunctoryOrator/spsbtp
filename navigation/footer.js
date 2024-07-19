@@ -43,13 +43,13 @@ document.write(`<footer class = "unselectable" onmouseenter = toggleOpacity("scr
     </div>
 </nav>
 <nav class = "footerBar">
-    <hr color = "white" size = "2px" style = "margin: 7px 40px 7px 40px; border-radius: 2px;">
+    <hr color = "white" size = "2px">
     <a title = "" href = ""> Site Map </a>
     <a title = "" href = ""> Official School Website </a>
     <a title = "" href = ""> Agra Archdiocese </a>
     <a title = "" href = ""> Yashdeep Singh Fauzdar </a> <!-- Yashdeep Singh Fauzdarʼs Personal Webpage -->
     <a title = "" href = ""> Copyright Disclaimer </a> <!-- Also include Source Code -->
-    <span style = "float: right; margin: 16px 40px 16px 0px;"> India </span>
+    <span style = "float: right; margin: 16px 20px;"> India </span>
 </nav>
 </footer>
 <a id = "scrollTop" class = "unselectable" title = "Scroll to the Top of the Page" href = "#" onmouseenter = toggleOpacity("scrollTop") onmouseleave = toggleOpacity("scrollTop")> ↑ </a>`)

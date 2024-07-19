@@ -88,12 +88,8 @@ function copyText(id) {
 function hideAllMenus() {
     for (let id of dMenus) {
         idButton = "b" + id.slice(1);
-        if (idButton == currentMenu) {
-            document.getElementById(idButton).style.backgroundColor = "cornsilk";
-        } else {
-            document.getElementById(idButton).style.color = "";
-            document.getElementById(idButton).style.backgroundColor = "";
-        }
+        document.getElementById(idButton).style.color = "";
+        document.getElementById(idButton).style.backgroundColor = "";
         document.getElementById(id).style.height = "";
     }
 }
@@ -108,10 +104,8 @@ function showMenu(id) {
 function hideMenu(id) {
     if (dMenuLocked[dMenus.indexOf(id)] == 0) {
         let idButton = "b" + id.slice(1);
-        if (idButton != currentMenu) {
-            document.getElementById(idButton).style.color = "";
-            document.getElementById(idButton).style.backgroundColor = "";
-        }
+        document.getElementById(idButton).style.color = "";
+        document.getElementById(idButton).style.backgroundColor = "";
         document.getElementById(id).style.height = "";
     }
 }
