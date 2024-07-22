@@ -6,11 +6,11 @@ header {
     overflow: hidden;
     width: 100%;
     text-align: center;
-    line-height: 120px; /* used instead of "height" for vertical-align to work properly */
+    line-height: 120px;
 }
 header > span {
     display: inline-block;
-    margin: 0px 4%;
+    margin: 0px 6%;
     text-align: left;
     vertical-align: middle;
     line-height: normal;
@@ -26,7 +26,7 @@ header > span {
     text-decoration: none;
 }
 #headerContactUs a:hover {
-    color: blue; /* skyblue in Dark mode */
+    color: blue;
     text-decoration: underline;
 }
 #navbarContainer {
@@ -105,7 +105,7 @@ footer {
 }
 .footerNavGroup {
     float: left;
-    margin-top: 26px; /* 40px – 14px = 26px */
+    margin-top: 14px;
 }
 .footerNavGroup a {
     float: left;
