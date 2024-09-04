@@ -1,6 +1,8 @@
 header {
     display: block;
     overflow: hidden;
+    color: var(--text-colour);
+    background-color: var(--body-colour);
     width: 100%;
     text-align: center;
     line-height: 120px;
@@ -24,8 +26,11 @@ header > span {
     text-decoration: none;
 }
 #headerContactUs a:hover {
-    color: blue;
+    color: var(--link-colour);
     text-decoration: underline;
+}
+header svg path {
+    fill: var(--text-colour);
 }
 #navbarContainer {
     position: sticky;
@@ -35,7 +40,7 @@ header > span {
 }
 #navbar {
     overflow: hidden;
-    background-color: coral;
+    background-color: var(--theme-colour);
 }
 #navbar > a {
     display: block;
@@ -48,13 +53,13 @@ header > span {
 .dropdownContainer {
     float: left;
     overflow: hidden;
-    background-color: white;
+    background-color: var(--body-colour);
 }
 .dropdownButton {
     font-family: inherit;
     font-size: inherit;
     color: white;
-    background-color: coral;
+    background-color: var(--theme-colour);
     cursor: pointer;
     padding: 14px 20px;
     border: none;
@@ -74,7 +79,7 @@ header > span {
     height: 0px;
     border: 2px solid gainsboro;
     border-bottom: none;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px var(--shadow-colour);
     transition: height 0.15s var(--emphasis-animation);
 }
 .dropdownContent > a {
@@ -86,8 +91,8 @@ header > span {
     transition: background-color 0.2s ease-out;
 }
 #navbar > a:hover, .dropdownContent > a:hover {
-    color: black;
-    background-color: cornsilk;
+    color: var(--text-colour);
+    background-color: var(--hover-colour);
 }
 hr {
     margin: 7px 20px;
@@ -99,7 +104,7 @@ footer {
 .footerNavContainer {
     float: left;
     color: white;
-    background-color: coral;
+    background-color: var(--theme-colour);
     width: 100%;
 }
 .footerNavGroup {
@@ -141,7 +146,7 @@ footer {
     display: block;
     float: left;
     color: white;
-    background-color: coral;
+    background-color: var(--theme-colour);
     width: 100%;
 }
 .footerBar > a {
