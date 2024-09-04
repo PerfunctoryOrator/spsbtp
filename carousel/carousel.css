@@ -106,7 +106,7 @@
     display: flex;
     gap: var(--carousel-pagination-gap);
     justify-content: center;
-    background-color: coral;
+    background-color: var(--theme-colour);
     border-bottom-left-radius: var(--carousel-radius);
     border-bottom-right-radius: var(--carousel-radius);
 }
