@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<!--
+    Carousel code: https://github.com/c99rahul/js-carousel.git
+    SVG “Info” and “Contact” icons (header): Apple Inc.
+    SVG “Scroll to Top” arrow icon: Apple Inc.
+-->
+<html lang = "en-IN">
+    <head>
+        <meta charset = "utf-8" />
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0" />
+        <meta name = "theme-color" content = "peachpuff" />
+	    <title> St. Peter’s School, Bharatpur </title>
+        <link rel = "canonical" href = "/spsbtp/home (test).html" />
+	    <link rel = "icon" type = "image/png" href = "/spsbtp/media-support/favicon.png" />
+        <link rel = "stylesheet" type = "text/css" href = "/spsbtp/style.css" />
+        <link rel = "stylesheet" type = "text/css" href = "/spsbtp/navigation/navigation.css" />
+        <link rel = "stylesheet" type = "text/css" href = "/spsbtp/carousel/carousel.css" />
+    </head>
+    <body>
+        <header class = "unselectable">
+            <span title = "School’s Name and Logo">
+                <img src = "/spsbtp/media-support/sps-logo.png" alt = "SPS Logo" style = "float: left; height: 55px; margin: 5px;" />
+                <span style = "display: inline-block; font-size: xx-large;">
+                    St. Peter’s Sr. Sec. School
+                    <span style = "display: block; font-size: large;"> Bharatpur (Rajasthan) </span>
+                </span>
+            </span>
+            <span title = "CBSE Affiliation Information">
+                <svg width = "20.5381" height = "20.1812">
+                    <g>
+                        <rect height = "20.1812" opacity = "0" width = "20.5381" x = "0" y = "0" />
+                        <path d = "M20.1767 10.0875C20.1767 15.606 15.6141 20.175 10.0875 20.175C4.5707 20.175 0 15.606 0 10.0875C0 4.56094 4.56269 0 10.0795 0C15.606 0 20.1767 4.56094 20.1767 10.0875ZM8.47461 8.31249C8.01699 8.31249 7.66133 8.6664 7.66133 9.10097C7.66133 9.56835 8.01699 9.89921 8.47461 9.89921L9.49961 9.89921L9.49961 14.1234L8.29804 14.1234C7.83594 14.1234 7.47851 14.4773 7.47851 14.9102C7.47851 15.3793 7.83594 15.7102 8.29804 15.7102L12.4092 15.7102C12.873 15.7102 13.2287 15.3793 13.2287 14.9102C13.2287 14.4773 12.873 14.1234 12.4092 14.1234L11.285 14.1234L11.285 9.33241C11.285 8.7205 10.9834 8.31249 10.4025 8.31249ZM8.63379 5.34706C8.63379 6.12265 9.25664 6.74726 10.026 6.74726C10.7953 6.74726 11.4101 6.12265 11.4101 5.34706C11.4101 4.56093 10.7953 3.94336 10.026 3.94336C9.25664 3.94336 8.63379 4.56093 8.63379 5.34706Z" fill-opacity = "0.85" />
+                    </g>
+                </svg>
+                <span style = "display: inline-block; vertical-align: middle; line-height: 25px;">
+                    Affiliated to CBSE <br>
+                    Affiliation No.: <span id = "affiliationNo" title = "Click to Copy to Clipboard" onclick = copyText("affiliationNo")> 1730118 </span> <br>
+                    School Code: <span id = "schoolCode" title = "Click to Copy to Clipboard" onclick = copyText("schoolCode")> 10401 </span>
+                </span>
+            </span>
+            <span id = "headerContactUs" title = "Contact Us">
+                <svg width = "16.8619" height = "17.6668">
+                    <g>
+                        <rect height = "17.6668" opacity = "0" width = "16.8619" x = "0" y = "0" />
+                        <path d = "M1.75429 17.6535L14.748 17.6535C15.8457 17.6535 16.5006 17.1336 16.5006 16.2703C16.5006 13.7578 13.3146 10.3023 8.24629 10.3023C3.18769 10.3023 0 13.7578 0 16.2703C0 17.1336 0.656639 17.6535 1.75429 17.6535ZM8.2543 8.56836C10.3828 8.56836 12.1939 6.67578 12.1939 4.2291C12.1939 1.8293 10.3775 0 8.2543 0C6.13105 0 4.31641 1.86133 4.31641 4.24687C4.31641 6.67578 6.11953 8.56836 8.2543 8.56836Z" fill-opacity = "0.85" />
+                    </g>
+                </svg>
+                <span style = "display: inline-block; vertical-align: middle; line-height: 25px;">
+                    Phone: <a title = "Click to Call" href = "tel:+915644222700"> (+91) 56442 22700 </a> <br>
+                    E-mail: <a title = "Click to E-mail" href = "mailto:stpetersbharatpur@gmail.com"> stpetersbharatpur@gmail.com </a> <br>
+                    Address: <span id = "shortAddress" title = "Click to Copy to Clipboard" onclick = copyText("shortAddress")> Bharatpur, Rajasthan (India) </span>
+                </span>
+            </span>
+        </header>
+        <nav class = "unselectable" id = "navbarContainer">
+            <div id = "navbar">
+                <a title = "Homepage" href = "/spsbtp/"> Home </a>
+                <div class = "dropdownContainer" onclick = lockMenu("dAbout") onmouseover = showMenu("dAbout") onmouseout = hideMenu("dAbout")>
+                    <button class = "dropdownButton" id = "bAbout" title = "All About Us"> About Us </button> 
+                    <div class = "dropdownContent" id = "dAbout">
+                        <a title = "Our History" href = ""> Our History </a>
+                        <a title = "School Infrastructure" href = ""> Infrastructure </a>
+                        <a title = "School Management Committee" href = ""> Management Committee </a>
+                        <a title = "Teaching Faculty" href = ""> Teaching Faculty </a>
+                    </div>
+                </div>
+                <div class = "dropdownContainer" onclick = lockMenu("dAdmissions") onmouseover = showMenu("dAdmissions") onmouseout = hideMenu("dAdmissions")>
+                    <button class = "dropdownButton" id = "bAdmissions" title = "Everything related to Admissions"> Admissions </button>
+                    <div class = "dropdownContent" id = "dAdmissions">
+                        <a title = "Conditions for Admission of a Child" href = ""> Admission Policy </a>
+                        <a title = "Pattern for Quarterly Payment of Students’ Fees" href = ""> Fee Structure </a>
+                        <a title = "Prescribed Books for All Classes" href = ""> Book List </a>
+                    </div>
+                </div>
+                <div class = "dropdownContainer" onclick = lockMenu("dAcademics") onmouseover = showMenu("dAcademics") onmouseout = hideMenu("dAcademics")>
+                    <button class = "dropdownButton" id = "bAcademics" title = "Academic Policies"> Academics </button>
+                    <div class = "dropdownContent" id = "dAcademics">
+                        <a title = "Pre-Planned Events and Functions" href = ""> Annual Calendar </a>
+                        <a title = "Rules to be followed in the Library" href = ""> Library Rules </a>
+                        <a title = "Results of Our School’s CBSE Annual Examination Attendees" href = ""> Results </a>
+                    </div>
+                </div>
+                <div class = "dropdownContainer" onclick = lockMenu("dSchoolLife") onmouseover = showMenu("dSchoolLife") onmouseout = hideMenu("dSchoolLife")>
+                    <button class = "dropdownButton" id = "bSchoolLife" title = "Discover More About Student Life at Our School"> School Life </button>
+                    <div class = "dropdownContent" id = "dSchoolLife">
+                        <a title = "School Timings, and the Prescribed Uniform for Students" href = ""> Timings and Uniform </a>
+                        <a title = "Guidelines for Students’ Betterment" href = ""> Guidelines for Students </a>
+                        <a title = "Daily Prayers and School Anthem" href = ""> Prayers and Anthem </a>
+                        <a title = "List of All Holidays in the Current Session" href = ""> Holiday List </a>
+                    </div>
+                </div>
+                <div class = "dropdownContainer" onclick = lockMenu("dNewsEvents") onmouseover = showMenu("dNewsEvents") onmouseout = hideMenu("dNewsEvents")>
+                    <button class = "dropdownButton" id = "bNewsEvents" title = "Latest News & Upcoming School Events"> News & Events </button>
+                    <div class = "dropdownContent" id = "dNewsEvents">
+                        <a title = "Latest News regarding the School" href = ""> News </a>
+                        <a title = "Upcoming School Events" href = ""> Upcoming Events </a>
+                        <a title = "Annual Reports of All Activities performed Yearly" href = ""> Annual Reports </a>
+                    </div>
+                </div>
+                <a title = "Public Disclosure, as mandated by CBSE" href = "" style = "float: right;"> Mandatory Public Disclosure </a>
+            </div>
+        </nav>
+        <div id = "body">
+            <div style = " float: right;">
+                <div id = "carousel-1" class = "carousel">
+                    <h3 class = "carousel-title"> Class <span class = "serif"> X </span> <br> District Topper </h3>
+                    <div class = "slide">
+                        <div class = "slide-content">
+                            <div class = "slide-detail"> District Topper <br> 98.20% </div>
+                            <div class = "slide-caption"> Surbhi Singh </div>
+                            <img src = "/spsbtp/media-support/academics/results/class-X/surbhi.jpg" alt = "Surbhi Singh" />
+                        </div>
+                    </div>
+                    <div class = "slide">
+                        <div class = "slide-content">
+                            <div class = "slide-detail"> 96.80% </div>
+                            <div class = "slide-caption"> Divyanshi Singhal </div>
+                            <img src = "/spsbtp/media-support/academics/results/class-X/divyanshi.jpg" alt = "Divyanshi Singhal" />
+                        </div>
+                    </div>
+                    <div class = "slide">
+                        <div class = "slide-content">
+                            <div class = "slide-detail"> 95.60% </div>
+                            <div class = "slide-caption"> Niharika Singh </div>
+                            <img src = "/spsbtp/media-support/academics/results/class-X/niharika.jpg" alt = "Niharika Singh" />
+                        </div>
+                    </div>
+                    <div class = "slide">
+                        <div class = "slide-content">
+                            <div class = "slide-detail"> 95.60% </div>
+                            <div class = "slide-caption"> Shaurya Pratap </div>
+                            <img src = "/spsbtp/media-support/academics/results/class-X/shaurya.jpg" alt = "Shaurya Pratap" />
+                        </div>
+                    </div>
+                    <div class = "slide">
+                        <div class = "slide-content">
+                            <div class = "slide-detail"> 95.00% </div>
+                            <div class = "slide-caption"> Harshit Agarwal </div>
+                            <img src = "/spsbtp/media-support/academics/results/class-X/harshit.jpg" alt = "Harshit Agarwal" />
+                        </div>
+                    </div>
+                    <div class = "slide">
+                        <div class = "slide-content">
+                            <div class = "slide-detail"> 94.80% </div>
+                            <div class = "slide-caption"> Akshat Sharma </div>
+                            <img src = "/spsbtp/media-support/academics/results/class-X/akshat.jpg" alt = "Akshat Sharma" />
+                        </div>
+                    </div>
+                    <div class = "slide">
+                        <div class = "slide-content">
+                            <div class = "slide-detail"> 94.20% </div>
+                            <div class = "slide-caption"> Bhuvi Agarwal </div>
+                            <img src = "/spsbtp/media-support/academics/results/class-X/bhuvi.jpg" alt = "Bhuvi Agarwal" />
+                        </div>
+                    </div>
+                    <div class = "slide">
+                        <div class = "slide-content">
+                            <div class = "slide-detail"> 94.00% </div>
+                            <div class = "slide-caption"> Yashika Singhal </div>
+                            <img src = "/spsbtp/media-support/academics/results/class-X/yashika.jpg" alt = "Yashika Singhal" />
+                        </div>
+                    </div>
+                </div>
+                <div id = "carousel-2" class = "carousel">
+                    <h3 class = "carousel-title"> Class <span class = "serif"> XII </span> <br> Commerce </h3>
+                    <div class = "slide">
+                        <div class = "slide-content">
+                            <div class = "slide-detail"> 94.60% </div>
+                            <div class = "slide-caption"> Yashaswi Singhal </div>
+                            <img src = "/spsbtp/media-support/academics/results/class-XII/yashaswi.jpg" alt = "Yashaswi Singhal" />
+                        </div>
+                    </div>
+                    <div class = "slide">
+                        <div class = "slide-content">
+                            <div class = "slide-detail"> 94.00% </div>
+                            <div class = "slide-caption"> Vanshika Pathak </div>
+                            <img src = "/spsbtp/media-support/academics/results/class-XII/vanshika-pathak.jpg" alt = "Vanshika Pathak" />
+                        </div>
+                    </div>
+                    <div class = "slide">
+                        <div class = "slide-content">
+                            <div class = "slide-detail"> 93.80% </div>
+                            <div class = "slide-caption"> Nishant Sharma </div>
+                            <img src = "/spsbtp/media-support/academics/results/class-XII/nishant.jpg" alt = "Nishant Sharma" />
+                        </div>
+                    </div>
+                    <div class = "slide">
+                        <div class = "slide-content">
+                            <div class = "slide-detail"> 93.40% </div>
+                            <div class = "slide-caption"> Anurag Singhal </div>
+                            <img src = "/spsbtp/media-support/academics/results/class-XII/anurag.jpg" alt = "Anurag Singhal" />
+                        </div>
+                    </div>
+                    <div class = "slide">
+                        <div class = "slide-content">
+                            <div class = "slide-detail"> 90.40% </div>
+                            <div class = "slide-caption"> Aanya Khandelwal </div>
+                            <img src = "/spsbtp/media-support/academics/results/class-XII/aanya.jpg" alt = "Aanya Khandelwal" />
+                        </div>
+                    </div>
+                    <div class = "slide">
+                        <div class = "slide-content">
+                            <div class = "slide-detail"> 90.20% </div>
+                            <div class = "slide-caption"> Yash Garg </div>
+                            <img src = "/spsbtp/media-support/academics/results/class-XII/yash.jpg" alt = "Yash Garg" />
+                        </div>
+                    </div>
+                </div>
+                <div id = "carousel-3" class = "carousel">
+                    <h3 class = "carousel-title"> Class <span class = "serif"> XII </span> <br> Science </h3>
+                    <div class = "slide">
+                        <div class = "slide-content">
+                            <div class = "slide-detail"> 88.40% </div>
+                            <div class = "slide-caption"> Dennis </div>
+                            <img src = "/spsbtp/media-support/academics/results/class-XII/dennis.jpg" alt = "Dennis" />
+                        </div>
+                    </div>
+                    <div class = "slide">
+                        <div class = "slide-content">
+                            <div class = "slide-detail"> 87.00% </div>
+                            <div class = "slide-caption"> Vanshika Sharma </div>
+                            <img src = "/spsbtp/media-support/academics/results/class-XII/vanshika-sharma.jpg" alt = "Vanshika Sharma" />
+                        </div>
+                    </div>
+                    <div class = "slide">
+                        <div class = "slide-content">
+                            <div class = "slide-detail"> 86.80% </div>
+                            <div class = "slide-caption"> Kavya Singariya </div>
+                            <img src = "/spsbtp/media-support/academics/results/class-XII/kavya.jpg" alt = "Kavya Singariya" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src = "/spsbtp/media-support/home-page/green-house-shield-win.jpg" alt = "green house shield win.jpg" style = "float: left;" />
+            <span class = "textContainer">
+                St. Peter’s School, Bharatpur, was established in 1970 under the aegis of the Archdiocese of Agra, dedicated to education and human development. Initially, the school operated from a rented building in Ranjeet Nagar, starting with just nine students, one teacher, and two priests who laid the foundation for St. Peter’s School in Bharatpur. Under the leadership of Reverent Father Thomas Paramundayil, who assumed administration in 1975, the school has carved out a significant place for itself in Rajasthan’s educational landscape. <br>
+                For more information, see <a href = ""> Our History</a>.
+            </span>
+        </div>
+        <footer class = "unselectable" onmouseenter = toggleOpacity("scrollTop") onmouseleave = toggleOpacity("scrollTop")>
+            <nav class = "footerNavContainer">
+                <div class = "footerNavGroup">
+                    <menu class = "footerNavContent">
+                        <li> <a title = "Self-Declaration by the Principal" href = ""> Self-Declaration </a> </li>
+                        <li> <a title = "Extension of Affiliation Certificate" href = ""> Extension of Affiliation </a> </li>
+                    </menu>
+                </div>
+                <div class = "footerNavGroup">
+                    <button> Compliance </button>
+                    <menu class = "footerNavContent">
+                        <li> <a title = "Society Registration Certificate" href = ""> Society Registration Certificate </a> </li>
+                        <li> <a title = "No Objection Certificate from the Government of Rajasthan" href = ""> NOC from State Government </a> </li>
+                        <li> <a title = "Certificate Issued by District Education Officer, Bharatpur" href = ""> DEO Certificate </a> </li>
+                    </menu>
+                </div>
+                <div class = "footerNavGroup">
+                    <button> Safety </button>
+                    <menu class = "footerNavContent">
+                        <li> <a title = "Building Safety Certificate" href = ""> Building Safety Certificate </a> </li>
+                        <li> <a title = "Fire Safety Certificate" href = ""> Fire Safety Certificate </a> </li>
+                        <li> <a title = "Certificate Regarding Safe Drinking-Water and Sanitary Conditions" href = ""> Water and Sanitation </a> </li>
+                    </menu>
+                </div>
+                <div class = "footerNavGroup">
+                    <button> Parental Engagement </button>
+                    <menu class = "footerNavContent">
+                        <li> <a title = "Recommendations to Parents to get the Best out of their Children" href = ""> Recommendations to Parents </a> </li>
+                        <li> <a title = "Parent-Teacher Association and its Members" href = ""> Parent-Teacher Association </a> </li>
+                    </menu>
+                </div>
+                <div class = "footerNavGroup">
+                    <button> Governance </button>
+                    <menu class = "footerNavContent">
+                        <li> <a title = "School Cabinet" href = ""> Cabinet </a> </li>
+                        <li> <a title = "Internal Complaints Committeee — Sexual Harassment" href = ""> Internal Complaints Committe </a> </li>
+                    </menu>
+                </div>
+                <div class = "footerNavGroup">
+                    <menu class = "footerNavContent">
+                        <li> <a title = "Photo and Video Gallery" href = ""> Gallery </a> </li>
+                        <li> <a title = "Ways to Contact Us" href = ""> Contact Us </a> </li>
+                    </menu>
+                </div>
+            </nav>
+            <nav class = "footerBar">
+                <hr color = "white" size = "2px" />
+                <a title = "Map of the Website" href = "#top"> Site Map </a>
+                <a title = "Official Website of St. Peter’s School, Bharatpur" href = ""> Official School Website </a>
+                <a title = "Official Website of the Agra Archdiocese, this School’s Parent Organisation" href = ""> Agra Archdiocese </a>
+                <a title = "Yashdeep Singh Fauzdar’s Personal Webpage" href = ""> Yashdeep Singh Fauzdar </a>
+                <a title = "This Website has been developed by Yashdeep Singh Fauzdar for his School Project" href = ""> Copyright Disclaimer </a> <!-- Also include Source Code (link) -->
+                <span style = "float: right; padding: 16px 20px;"> India (भारत) </span>
+            </nav>
+        </footer>
+        <a id = "scrollTop" class = "unselectable" title = "Scroll to the Top of the Page" href = "#" onmouseenter = toggleOpacity("scrollTop") onmouseleave = toggleOpacity("scrollTop")>
+            <svg width = "17.6582" height = "10.6406">
+                <g>
+                    <rect height = "10.6406" opacity = "0" width = "17.6582" x = "0" y = "0" />
+                    <path d = "M0.326951 8.00801C0.116991 8.21348 0 8.4873 0 8.80273C0 9.43886 0.493355 9.93573 1.12772 9.93573C1.44667 9.93573 1.74081 9.8162 1.94705 9.59393L9.13046 2.24197L8.17519 2.24197L15.3516 9.59393C15.5641 9.81795 15.86 9.93573 16.1691 9.93573C16.8017 9.93573 17.2969 9.43886 17.2969 8.80273C17.2969 8.48554 17.1816 8.21172 16.9682 8.00801L9.5326 0.398433C9.28573 0.137303 8.98534 0.00351548 8.65331 0C8.31504 0 8.0209 0.135546 7.76602 0.398433Z" fill-opacity = "0.85" />
+                </g>
+            </svg> 
+        </a>
+    </body>
+    <script>
+        const dMenus = ["dAbout", "dAdmissions", "dAcademics", "dSchoolLife", "dNewsEvents"];
+        let dMenuLocked = [0, 0, 0, 0, 0];
+        const dMenuHeights = [];
+        for (let id of dMenus) {
+            let element = document.getElementById(id);
+            element.style.height = "max-content";
+            dMenuHeights.push(getComputedStyle(element).getPropertyValue("height"));
+            element.style.height = "";
+        }
+
+        function copyText(id) {
+            navigator.clipboard.writeText(document.getElementById(id).innerText);
+        }
+        function hideAllMenus() {
+            for (let id of dMenus) {
+                idButton = "b" + id.slice(1);
+                document.getElementById(idButton).style.color = "";
+                document.getElementById(idButton).style.backgroundColor = "";
+                document.getElementById(id).style.height = "";
+            }
+        }
+        function showMenu(id) {
+            if (!dMenuLocked.includes(1)) {
+                let idButton = "b" + id.slice(1);
+                document.getElementById(idButton).style.color = getComputedStyle(document.querySelector(":root")).getPropertyValue("--text-colour");
+                document.getElementById(idButton).style.backgroundColor = getComputedStyle(document.querySelector(":root")).getPropertyValue("--hover-colour");
+                document.getElementById(id).style.height = dMenuHeights[dMenus.indexOf(id)];
+            }
+        }
+        function hideMenu(id) {
+            if (dMenuLocked[dMenus.indexOf(id)] == 0) {
+                let idButton = "b" + id.slice(1);
+                document.getElementById(idButton).style.color = "";
+                document.getElementById(idButton).style.backgroundColor = "";
+                document.getElementById(id).style.height = "";
+            }
+        }
+        function lockMenu(id) {
+            const i = dMenus.indexOf(id);
+            const menuLockStatus = dMenuLocked[i];
+            dMenuLocked = [0, 0, 0, 0, 0, 0];
+            dMenuLocked[i] = 1 - menuLockStatus;
+            hideAllMenus();
+            if (menuLockStatus == 0) { // if menuLockStatus == 0, then after *see 2 lines above (currentLine - 2)*, it has to be shown
+                let idButton = "b" + id.slice(1);
+                document.getElementById(idButton).style.color = getComputedStyle(document.querySelector(":root")).getPropertyValue("--text-colour");
+                document.getElementById(idButton).style.backgroundColor = getComputedStyle(document.querySelector(":root")).getPropertyValue("--browser-theme-colour"); // to indicate that dropdown is locked
+                document.getElementById(id).style.height = dMenuHeights[dMenus.indexOf(id)];
+            }
+        }
+        function toggleOpacity(id) {
+            document.getElementById(id).style.opacity = 1 - document.getElementById(id).style.opacity;
+        }
+
+        document.addEventListener("click", function(event) {
+            if (!(dMenus.includes("d" + event.target.id.slice(1)) || dMenus.includes(event.target.id))) {
+                dMenuLocked = [0, 0, 0, 0, 0, 0];
+                hideAllMenus();
+            }
+        });
+    </script>
+    <script src = "/spsbtp/carousel/carousel.js"></script>
+    <script>
+        const carousel1  =  JSCarousel({
+            carouselSelector: "#carousel-1",
+            slideSelector: ".slide",
+        });
+        carousel1.create();
+        const carousel2  =  JSCarousel({
+            carouselSelector: "#carousel-2",
+            slideSelector: ".slide",
+        });
+        carousel2.create();
+        const carousel3  =  JSCarousel({
+            carouselSelector: "#carousel-3",
+            slideSelector: ".slide",
+        });
+        carousel3.create();
+
+        window.addEventListener("unload", () => {
+            carousel1.destroy();
+            carousel2.destroy();
+            carousel3.destroy();
+        });
+    </script>
+</html>

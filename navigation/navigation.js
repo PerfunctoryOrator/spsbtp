@@ -7,10 +7,10 @@ document.write(`<header class = "unselectable">
         </span>
     </span>
     <span title = "CBSE Affiliation Information">
-        <svg version = "1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink = "http://www.w3.org/1999/xlink" width = "20.5381" height="20.1812" style = "margin: 10px; vertical-align: middle;">
+        <svg width = "20.5381" height = "20.1812">
             <g>
-                <rect height = "20.1812" opacity = "0" width = "20.5381" x = "0" y = "0"/>
-                <path d = "M20.1767 10.0875C20.1767 15.606 15.6141 20.175 10.0875 20.175C4.5707 20.175 0 15.606 0 10.0875C0 4.56094 4.56269 0 10.0795 0C15.606 0 20.1767 4.56094 20.1767 10.0875ZM8.47461 8.31249C8.01699 8.31249 7.66133 8.6664 7.66133 9.10097C7.66133 9.56835 8.01699 9.89921 8.47461 9.89921L9.49961 9.89921L9.49961 14.1234L8.29804 14.1234C7.83594 14.1234 7.47851 14.4773 7.47851 14.9102C7.47851 15.3793 7.83594 15.7102 8.29804 15.7102L12.4092 15.7102C12.873 15.7102 13.2287 15.3793 13.2287 14.9102C13.2287 14.4773 12.873 14.1234 12.4092 14.1234L11.285 14.1234L11.285 9.33241C11.285 8.7205 10.9834 8.31249 10.4025 8.31249ZM8.63379 5.34706C8.63379 6.12265 9.25664 6.74726 10.026 6.74726C10.7953 6.74726 11.4101 6.12265 11.4101 5.34706C11.4101 4.56093 10.7953 3.94336 10.026 3.94336C9.25664 3.94336 8.63379 4.56093 8.63379 5.34706Z" fill-opacity = "0.85"/>
+                <rect height = "20.1812" opacity = "0" width = "20.5381" x = "0" y = "0" />
+                <path d = "M20.1767 10.0875C20.1767 15.606 15.6141 20.175 10.0875 20.175C4.5707 20.175 0 15.606 0 10.0875C0 4.56094 4.56269 0 10.0795 0C15.606 0 20.1767 4.56094 20.1767 10.0875ZM8.47461 8.31249C8.01699 8.31249 7.66133 8.6664 7.66133 9.10097C7.66133 9.56835 8.01699 9.89921 8.47461 9.89921L9.49961 9.89921L9.49961 14.1234L8.29804 14.1234C7.83594 14.1234 7.47851 14.4773 7.47851 14.9102C7.47851 15.3793 7.83594 15.7102 8.29804 15.7102L12.4092 15.7102C12.873 15.7102 13.2287 15.3793 13.2287 14.9102C13.2287 14.4773 12.873 14.1234 12.4092 14.1234L11.285 14.1234L11.285 9.33241C11.285 8.7205 10.9834 8.31249 10.4025 8.31249ZM8.63379 5.34706C8.63379 6.12265 9.25664 6.74726 10.026 6.74726C10.7953 6.74726 11.4101 6.12265 11.4101 5.34706C11.4101 4.56093 10.7953 3.94336 10.026 3.94336C9.25664 3.94336 8.63379 4.56093 8.63379 5.34706Z" fill-opacity = "0.85" />
             </g>
         </svg>
         <span style = "display: inline-block; vertical-align: middle; line-height: 25px;">
@@ -20,10 +20,10 @@ document.write(`<header class = "unselectable">
         </span>
     </span>
     <span id = "headerContactUs" title = "Contact Us">
-        <svg version = "1.1" xmlns = "http://www.w3.org/2000/svg" xmlns:xlink = "http://www.w3.org/1999/xlink" width = "16.8619" height = "17.6668" style = "margin: 10px; vertical-align: middle;">
+        <svg width = "16.8619" height = "17.6668">
             <g>
-                <rect height = "17.6668" opacity = "0" width = "16.8619" x = "0" y = "0"/>
-                <path d = "M1.75429 17.6535L14.748 17.6535C15.8457 17.6535 16.5006 17.1336 16.5006 16.2703C16.5006 13.7578 13.3146 10.3023 8.24629 10.3023C3.18769 10.3023 0 13.7578 0 16.2703C0 17.1336 0.656639 17.6535 1.75429 17.6535ZM8.2543 8.56836C10.3828 8.56836 12.1939 6.67578 12.1939 4.2291C12.1939 1.8293 10.3775 0 8.2543 0C6.13105 0 4.31641 1.86133 4.31641 4.24687C4.31641 6.67578 6.11953 8.56836 8.2543 8.56836Z" fill-opacity = "0.85"/>
+                <rect height = "17.6668" opacity = "0" width = "16.8619" x = "0" y = "0" />
+                <path d = "M1.75429 17.6535L14.748 17.6535C15.8457 17.6535 16.5006 17.1336 16.5006 16.2703C16.5006 13.7578 13.3146 10.3023 8.24629 10.3023C3.18769 10.3023 0 13.7578 0 16.2703C0 17.1336 0.656639 17.6535 1.75429 17.6535ZM8.2543 8.56836C10.3828 8.56836 12.1939 6.67578 12.1939 4.2291C12.1939 1.8293 10.3775 0 8.2543 0C6.13105 0 4.31641 1.86133 4.31641 4.24687C4.31641 6.67578 6.11953 8.56836 8.2543 8.56836Z" fill-opacity = "0.85" />
             </g>
         </svg>
         <span style = "display: inline-block; vertical-align: middle; line-height: 25px;">
@@ -35,7 +35,7 @@ document.write(`<header class = "unselectable">
 </header>
 <nav class = "unselectable" id = "navbarContainer">
     <div id = "navbar">
-        <a title = "Homepage" href = "home (test).html"> Home </a>
+        <a title = "Homepage" href = "/spsbtp/"> Home </a>
         <div class = "dropdownContainer" onclick = lockMenu("dAbout") onmouseover = showMenu("dAbout") onmouseout = hideMenu("dAbout")>
             <button class = "dropdownButton" id = "bAbout" title = "All About Us"> About Us </button> 
             <div class = "dropdownContent" id = "dAbout">
@@ -91,9 +91,6 @@ for (let id of dMenus) {
     dMenuHeights.push(getComputedStyle(element).getPropertyValue("height"));
     element.style.height = "";
 }
-let textColour = getComputedStyle(document.querySelector(":root")).getPropertyValue("--text-colour");
-let hoverColour = getComputedStyle(document.querySelector(":root")).getPropertyValue("--hover-colour");
-let browserThemeColour = getComputedStyle(document.querySelector(":root")).getPropertyValue("--browser-theme-colour");
 
 function copyText(id) {
     navigator.clipboard.writeText(document.getElementById(id).innerText);
@@ -109,8 +106,8 @@ function hideAllMenus() {
 function showMenu(id) {
     if (!dMenuLocked.includes(1)) {
         let idButton = "b" + id.slice(1);
-        document.getElementById(idButton).style.color = textColour;
-        document.getElementById(idButton).style.backgroundColor = hoverColour;
+        document.getElementById(idButton).style.color = getComputedStyle(document.querySelector(":root")).getPropertyValue("--text-colour");
+        document.getElementById(idButton).style.backgroundColor = getComputedStyle(document.querySelector(":root")).getPropertyValue("--hover-colour");
         document.getElementById(id).style.height = dMenuHeights[dMenus.indexOf(id)];
     }
 }
@@ -130,8 +127,8 @@ function lockMenu(id) {
     hideAllMenus();
     if (menuLockStatus == 0) { // if menuLockStatus == 0, then after *see 2 lines above (currentLine - 2)*, it has to be shown
         let idButton = "b" + id.slice(1);
-        document.getElementById(idButton).style.color = textColour;
-        document.getElementById(idButton).style.backgroundColor = browserThemeColour; // to indicate that dropdown is locked
+        document.getElementById(idButton).style.color = getComputedStyle(document.querySelector(":root")).getPropertyValue("--text-colour");
+        document.getElementById(idButton).style.backgroundColor = getComputedStyle(document.querySelector(":root")).getPropertyValue("--browser-theme-colour"); // to indicate that dropdown is locked
         document.getElementById(id).style.height = dMenuHeights[dMenus.indexOf(id)];
     }
 }

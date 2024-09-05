@@ -29,6 +29,10 @@ header > span {
     color: var(--link-colour);
     text-decoration: underline;
 }
+header svg {
+    margin: 10px;
+    vertical-align: middle;
+}
 header svg path {
     fill: var(--text-colour);
 }
@@ -157,4 +161,23 @@ footer {
 }
 .footerBar > a:hover {
     text-decoration: underline;
+}
+#scrollTop {
+    position: fixed;
+    right: 20px;
+    bottom: 90px;
+    fill: var(--text-colour);
+    background-color: var(--hover-colour);
+    cursor: pointer;
+    font-size: 32px;
+    width: 50px;
+    border-radius: 50%;
+    opacity: 0;
+    height: 50px; /* used instead of `height` so that vertical-align works */
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out, opacity 0.2s ease-out;
+}
+#scrollTop:hover {
+    background-color: var(--browser-theme-colour);
 }
