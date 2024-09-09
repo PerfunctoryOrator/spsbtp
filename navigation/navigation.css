@@ -100,7 +100,7 @@ header svg path {
 }
 hr {
     margin: 7px 20px;
-    border-radius: 2px;
+    border-radius: var(--box-radius);
 }
 footer {
     font-size: 14px;

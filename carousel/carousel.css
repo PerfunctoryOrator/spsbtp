@@ -1,7 +1,6 @@
 :root {
     --carousel-width: 200px;
     --carousel-height: 263px;
-    --carousel-radius: 0.5em;
     --carousel-page-nav-btn-dim: 0.5em;
     --carousel-caption-padding: 1em;
     --carousel-caption-color: white;
@@ -27,8 +26,8 @@
     position: relative;
     width: var(--carousel-width);
     min-height: var(--carousel-height);
-    border-top-left-radius: var(--carousel-radius);
-    border-top-right-radius: var(--carousel-radius);
+    border-top-left-radius: var(--box-radius);
+    border-top-right-radius: var(--box-radius);
 }
 
 .carousel-title {
@@ -73,7 +72,7 @@
     left: 0px;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
-    border-bottom-right-radius: var(--carousel-radius);
+    border-bottom-right-radius: var(--box-radius);
     opacity: 0;
     transition: opacity 0.2s ease-out;
 }
@@ -107,8 +106,8 @@
     gap: var(--carousel-pagination-gap);
     justify-content: center;
     background-color: var(--theme-colour);
-    border-bottom-left-radius: var(--carousel-radius);
-    border-bottom-right-radius: var(--carousel-radius);
+    border-bottom-left-radius: var(--box-radius);
+    border-bottom-right-radius: var(--box-radius);
 }
 .carousel-pagination .carousel-btn {
     background-color: var(--carousel-pagination-btn-bg);
