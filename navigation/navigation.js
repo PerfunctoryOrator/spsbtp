@@ -107,7 +107,7 @@ function hideAllMenus() {
 function showMenu(id) {
     if (!dMenuLocked.includes(1)) {
         let idButton = "b" + id.slice(1);
-        document.getElementById(idButton).style.color = getComputedStyle(document.querySelector(":root")).getPropertyValue("--text-colour");
+        document.getElementById(idButton).style.color = "black";
         document.getElementById(idButton).style.backgroundColor = getComputedStyle(document.querySelector(":root")).getPropertyValue("--hover-colour");
         document.getElementById(id).style.height = dMenuHeights[dMenus.indexOf(id)];
     }
@@ -128,7 +128,7 @@ function lockMenu(id) {
     hideAllMenus();
     if (menuLockStatus == 0) { // if menuLockStatus == 0, then after *see 2 lines above (currentLine - 2)*, it has to be shown
         let idButton = "b" + id.slice(1);
-        document.getElementById(idButton).style.color = getComputedStyle(document.querySelector(":root")).getPropertyValue("--text-colour");
+        document.getElementById(idButton).style.color = "black";
         document.getElementById(idButton).style.backgroundColor = getComputedStyle(document.querySelector(":root")).getPropertyValue("--browser-theme-colour"); // to indicate that dropdown is locked
         document.getElementById(id).style.height = dMenuHeights[dMenus.indexOf(id)];
     }
