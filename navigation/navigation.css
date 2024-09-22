@@ -95,7 +95,7 @@ header svg path {
     transition: background-color 0.2s ease-out;
 }
 #navbar > a:hover, .dropdownContent > a:hover {
-    color: var(--text-colour);
+    color: black;
     background-color: var(--hover-colour);
 }
 hr {
@@ -166,7 +166,7 @@ footer {
     position: fixed;
     right: 20px;
     bottom: 90px;
-    fill: var(--text-colour);
+    fill: black;
     background-color: var(--hover-colour);
     cursor: pointer;
     font-size: 32px;
