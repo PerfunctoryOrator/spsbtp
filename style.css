@@ -66,6 +66,7 @@ body {
 }
 .container > img {
     display: block;
+    height: 160px;
     border-left: 4px solid var(--theme-colour);
     border-bottom: 4px solid var(--theme-colour);
     border-radius: 12%;
@@ -75,7 +76,7 @@ body {
 .textContainer {
     overflow: hidden;
     text-align: justify;
-    margin: 0px 20px;
+    margin: 0px 0px 0px 16px;
 }
 .serif {
     font-family: ui-serif, "Times New Roman", Times, serif;

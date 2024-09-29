@@ -33,7 +33,7 @@ document.write(`<footer class = "unselectable" onmouseenter = toggleOpacity("scr
             <button> Governance </button>
             <menu class = "footerNavContent">
                 <li> <a title = "School Cabinet" href = ""> Cabinet </a> </li>
-                <li> <a title = "Internal Complaints Committeee — Sexual Harassment" href = ""> Internal Complaints Committe </a> </li>
+                <li> <a title = "Internal Complaints Committee — Sexual Harassment" href = ""> Internal Complaints Committee </a> </li>
             </menu>
         </div>
         <div class = "footerNavGroup">
