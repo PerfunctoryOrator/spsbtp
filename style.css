@@ -66,7 +66,7 @@ body {
 }
 .container > img {
     display: block;
-    height: 160px;
+    height: 200px;
     border-left: 4px solid var(--theme-colour);
     border-bottom: 4px solid var(--theme-colour);
     border-radius: 12%;
