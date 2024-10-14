@@ -15,10 +15,14 @@ header > span {
     vertical-align: middle;
     line-height: normal;
 }
-#affiliationNo, #schoolCode, #shortAddress {
+#affiliationNo,
+#schoolCode,
+#shortAddress {
     cursor: pointer;
 }
-#affiliationNo:hover, #schoolCode:hover, #shortAddress:hover {
+#affiliationNo:hover,
+#schoolCode:hover,
+#shortAddress:hover {
     text-decoration: underline;
 }
 #headerContactUs a {
@@ -52,7 +56,9 @@ header svg path {
     color: white;
     padding: 14px 20px;
     text-decoration: none;
-    transition: color 0.1s ease-out, background-color 0.1s ease-out;
+    transition:
+        color 0.1s ease-out,
+        background-color 0.1s ease-out;
 }
 .dropdownContainer {
     float: left;
@@ -67,7 +73,9 @@ header svg path {
     cursor: pointer;
     padding: 14px 20px;
     border: none;
-    transition: color 0.1s ease-out, background-color 0.1s ease-out;
+    transition:
+        color 0.1s ease-out,
+        background-color 0.1s ease-out;
 }
 .dropdownButton::after {
     content: "▼";
@@ -94,7 +102,8 @@ header svg path {
     text-decoration: none;
     transition: background-color 0.2s ease-out;
 }
-#navbar > a:hover, .dropdownContent > a:hover {
+#navbar > a:hover,
+.dropdownContent > a:hover {
     color: black;
     background-color: var(--hover-colour);
 }
@@ -176,7 +185,9 @@ footer {
     height: 50px; /* used instead of `height` so that vertical-align works */
     text-align: center;
     text-decoration: none;
-    transition: background-color 0.2s ease-out, opacity 0.2s ease-out;
+    transition:
+        background-color 0.2s ease-out,
+        opacity 0.2s ease-out;
 }
 #scrollTop:hover {
     background-color: var(--browser-theme-colour);

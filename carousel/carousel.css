@@ -116,7 +116,9 @@
     margin-bottom: calc(var(--carousel-pagination-margin) / 2);
     border-radius: 50%;
     color: transparent;
-    transition: transform 0.25s, background-color 0.25s ease-in-out;
+    transition:
+        transform 0.25s,
+        background-color 0.25s ease-in-out;
 }
 .carousel-pagination .carousel-btn--active {
     transform: scale(1.5);
