@@ -1,57 +1,56 @@
-document.write(`<footer class = "unselectable" onmouseenter = toggleOpacity("scrollTop") onmouseleave = toggleOpacity("scrollTop")>
+document.write(`<footer class = "unselectable" id = "footer" onmouseenter = toggleOpacity("scrollTop") onmouseleave = toggleOpacity("scrollTop")>
     <nav class = "footerNavContainer">
         <div class = "footerNavGroup">
         <menu class = "footerNavContent">
-            <li> <a title = "Self-Declaration by the Principal" href = ""> Self-Declaration </a> </li>
-            <li> <a title = "Extension of Affiliation Certificate" href = ""> Extension of Affiliation </a> </li>
+            <li> <a title = "Self-Declaration by the Principal" href = "https://www.stpetersbharatpur.in/pdf/Self-Declaration.pdf" target = "_blank"> Self-Declaration </a> </li>
+            <li> <a title = "Extension of Affiliation Certificate" href = "https://www.stpetersbharatpur.in/pdf/Extension-Affiliation.pdf" target = "_blank"> Extension of Affiliation </a> </li>
         </menu>
         </div>
         <div class = "footerNavGroup">
         <button> Compliance </button>
         <menu class = "footerNavContent">
-            <li> <a title = "Society Registration Certificate" href = ""> Society Registration Certificate </a> </li>
-            <li> <a title = "No Objection Certificate from the Government of Rajasthan" href = ""> NOC from State Government </a> </li>
-            <li> <a title = "Certificate Issued by District Education Officer, Bharatpur" href = ""> DEO Certificate </a> </li>
+            <li> <a title = "Society Registration Certificate" href = "https://www.stpetersbharatpur.in/pdf/Society-Registration-Certificate.pdf" target = "_blank"> Society Registration Certificate </a> </li>
+            <li> <a title = "No Objection Certificate from the Government of Rajasthan" href = "https://www.stpetersbharatpur.in/pdf/NOC.pdf" target = "_blank"> NOC from State Government </a> </li>
+            <li> <a title = "Certificate Issued by District Education Officer, Bharatpur" href = "https://www.stpetersbharatpur.in/pdf/DEO-Certificate.pdf" target = "_blank"> DEO Certificate </a> </li>
         </menu>
         </div>
         <div class = "footerNavGroup">
         <button> Safety </button>
         <menu class = "footerNavContent">
-            <li> <a title = "Building Safety Certificate" href = ""> Building Safety Certificate </a> </li>
-            <li> <a title = "Fire Safety Certificate" href = ""> Fire Safety Certificate </a> </li>
-            <li> <a title = "Certificate Regarding Safe Drinking-Water and Sanitary Conditions" href = ""> Water and Sanitation </a> </li>
+            <li> <a title = "Building Safety Certificate" href = "https://www.stpetersbharatpur.in/pdf/Building-Certificate.pdf" target = "_blank"> Building Safety Certificate </a> </li>
+            <li> <a title = "Fire Safety Certificate" href = "https://www.stpetersbharatpur.in/pdf/Fire-Safety-Certificate.pdf" target = "_blank"> Fire Safety Certificate </a> </li>
+            <li> <a title = "Certificate Regarding Safe Drinking-Water and Sanitary Conditions" href = "https://www.stpetersbharatpur.in/pdf/Water-Sanitation.pdf" target = "_blank"> Water and Sanitation </a> </li>
         </menu>
         </div>
         <div class = "footerNavGroup">
         <button> Parental Engagement </button>
         <menu class = "footerNavContent">
-            <li> <a title = "Recommendations to Parents to get the Best out of their Children" href = ""> Recommendations to Parents </a> </li>
-            <li> <a title = "Parent-Teacher Association and its Members" href = ""> Parent-Teacher Association </a> </li>
+            <li> <a title = "Recommendations to Parents to get the Best out of their Children" href = "${rootPath}footer/recommendations.html"> Recommendations to Parents </a> </li>
+            <li> <a title = "Parent-Teacher Association and its Members" href = "${rootPath}footer/pta.html"> Parent-Teacher Association </a> </li>
         </menu>
         </div>
         <div class = "footerNavGroup">
         <button> Governance </button>
         <menu class = "footerNavContent">
-            <li> <a title = "School Cabinet" href = ""> Cabinet </a> </li>
-            <li> <a title = "Internal Complaints Committee — Sexual Harassment" href = ""> Internal Complaints Committee </a> </li>
+            <li> <a title = "School Cabinet" href = "${rootPath}footer/cabinet.html"> Students’ Cabinet </a> </li>
+            <li> <a title = "Internal Complaints Committee — Sexual Harassment" href = "${rootPath}footer/complaints-committee.html"> Internal Complaints Committee </a> </li>
         </menu>
         </div>
         <div class = "footerNavGroup">
         <menu class = "footerNavContent">
-            <li> <a title = "Photo and Video Gallery" href = ""> Gallery </a> </li>
-            <li> <a title = "Ways to Contact Us" href = ""> Contact Us </a> </li>
-            <li> <a title = "CampusCare by Entab" href = "" target = "_blank"> CampusCare </a> </li>
+            <li> <a title = "Photo and Video Gallery" href = "https://www.stpetersbharatpur.in/photo-gallery.aspx" target = "_blank"> Gallery </a> </li>
+            <li> <a title = "Ways to Contact Us" href = "${rootPath}footer/contact.html"> Contact Us </a> </li>
+            <li> <a title = "CampusCare by Entab" href = "https://spsb.campuscare.info" target = "_blank"> CampusCare </a> </li>
         </menu>
         </div>
     </nav>
     <nav class = "footerBar">
         <hr color = "white" size = "2px" />
-        <a title = "Map of the Website" href = ""> Site Map </a>
-        <a title = "Official Website of St. Peter’s School, Bharatpur" href = "" target = "_blank"> Official School Website </a>
-        <a title = "Official Website of the Agra Archdiocese, this School’s Parent Organisation" href = "" target = "_blank"> Agra Archdiocese </a>
-        <a title = "Yashdeep Singh Fauzdar’s Personal Webpage" href = "" target = "_blank"> Yashdeep Singh Fauzdar </a>
-        <a title = "This Website has been developed by Yashdeep Singh Fauzdar for his School Project" href = ""> Disclaimer </a>
-        <a title = "Souce Code is available here" href = "" target = "_blank"> Source Code </a>
+        <a title = "Map of the Website" href = "${rootPath}footer/map.html"> Site Map </a>
+        <a title = "Official Website of St. Peter’s School, Bharatpur" href = "https://www.stpetersbharatpur.in" target = "_blank"> Official School Website </a>
+        <a title = "Official Website of the Agra Archdiocese, this School’s Parent Organisation" href = "https://www.agraarchdiocese.com/" target = "_blank"> Agra Archdiocese </a>
+        <a title = "This Website has been developed by Yashdeep Singh Fauzdar for his School Project" href = "${rootPath}footer/disclaimer.html"> Disclaimer </a>
+        <a title = "Souce Code is available here" href = "https://github.com/PerfunctoryOrator/spsbtp" target = "_blank"> Source Code </a>
         <span style = "float: right; padding: 16px 20px;"> India </span>
     </nav>
 </footer>
@@ -63,7 +62,10 @@ document.write(`<footer class = "unselectable" onmouseenter = toggleOpacity("scr
         </g>
     </svg>
 </a>`);
-
+var footer = document.getElementById("footer")
+if (footer.getBoundingClientRect().bottom < innerHeight) {
+    footer.style.position = "absolute";
+}
 function toggleOpacity(id) {
     document.getElementById(id).style.opacity = 1 - document.getElementById(id).style.opacity;
 }

@@ -15,6 +15,23 @@ header > span {
     vertical-align: middle;
     line-height: normal;
 }
+header svg {
+    margin: 10px;
+    vertical-align: middle;
+}
+header svg > g > path {
+    fill: var(--text-colour);
+}
+footer {
+    overflow: hidden;
+    bottom: 0px;
+    font-size: 14px;
+}
+footer hr {
+    margin: 7px 20px;
+    border-radius: var(--box-radius);
+}
+
 #affiliationNo, #schoolCode, #shortAddress {
     cursor: pointer;
 }
@@ -28,13 +45,6 @@ header > span {
 #headerContactUs a:hover {
     color: var(--link-colour);
     text-decoration: underline;
-}
-header svg {
-    margin: 10px;
-    vertical-align: middle;
-}
-header svg > g > path {
-    fill: var(--text-colour);
 }
 #navbarContainer {
     position: sticky;
@@ -54,6 +64,26 @@ header svg > g > path {
     text-decoration: none;
     transition: color 0.1s ease-out, background-color 0.1s ease-out;
 }
+#scrollTop {
+    position: fixed;
+    right: 20px;
+    bottom: 90px;
+    fill: black;
+    background-color: var(--hover-colour);
+    cursor: pointer;
+    font-size: 32px;
+    width: 50px;
+    border-radius: 50%;
+    opacity: 0;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out, opacity 0.2s ease-out;
+}
+#scrollTop:hover {
+    background-color: var(--browser-theme-colour);
+}
+
 .dropdownContainer {
     float: left;
     overflow: hidden;
@@ -94,17 +124,9 @@ header svg > g > path {
     text-decoration: none;
     transition: background-color 0.2s ease-out;
 }
-#navbar > a:hover,
-.dropdownContent > a:hover {
+#navbar > a:hover, .dropdownContent > a:hover {
     color: black;
     background-color: var(--hover-colour);
-}
-footer hr {
-    margin: 7px 20px;
-    border-radius: var(--box-radius);
-}
-footer {
-    font-size: 14px;
 }
 .footerNavContainer {
     float: left;
@@ -162,23 +184,4 @@ footer {
 }
 .footerBar > a:hover {
     text-decoration: underline;
-}
-#scrollTop {
-    position: fixed;
-    right: 20px;
-    bottom: 90px;
-    fill: black;
-    background-color: var(--hover-colour);
-    cursor: pointer;
-    font-size: 32px;
-    width: 50px;
-    border-radius: 50%;
-    opacity: 0;
-    height: 50px;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 0.2s ease-out, opacity 0.2s ease-out;
-}
-#scrollTop:hover {
-    background-color: var(--browser-theme-colour);
 }

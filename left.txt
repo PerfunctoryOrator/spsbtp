@@ -1,0 +1,15 @@
+about > faculty.html
+about > management.html
+
+academics
+
+admissions > book-list.html
+admissions > fee-structure.html
+
+footer
+
+life
+
+news-events
+
+rename <title>

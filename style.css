@@ -45,6 +45,22 @@ body {
 hr {
     border-radius: var(--box-radius);
 }
+table {
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid gainsboro;
+    border-radius: var(--box-radius);
+    border-spacing: 0px;
+    background-color: gainsboro;
+}
+table th, td {
+    padding: 12px 20px;
+    border: 2px solid gainsboro;
+    background-color: var(--body-colour);
+    text-align: center;
+}
+
 .unselectable {
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -63,12 +79,19 @@ hr {
 #body a:hover {
     text-decoration: underline;
 }
-.borderContainer {
+
+.path {
+    width: 300px;
+    background-color: rgba(220, 220, 220, 0.5);
+    margin: 0px 0px 0.83em calc(50% - 175px);
+    text-align: center;
+}
+.borderContainer, .path {
     display: inline-block;
     border: 4px solid gainsboro;
     border-radius: var(--box-radius);
 }
-.container, .borderContainer {
+.container, .borderContainer, .path {
     overflow: hidden;
     height: max-content;
     padding: 16px;
@@ -90,7 +113,20 @@ hr {
 .serif {
     font-family: ui-serif, "Times New Roman", Times, serif;
 }
-/* @media (max-width: 1312px), (max-height: 449px) {
+.tableTopLeft {
+    border-top-left-radius: var(--box-radius);
+}
+.tableTopRight {
+    border-top-right-radius: var(--box-radius);
+}
+.tableBottomLeft {
+    border-bottom-left-radius: var(--box-radius);
+}
+.tableBottomRight {
+    border-bottom-right-radius: var(--box-radius);
+}
+
+@media (max-width: 1311px), (max-height: 449px) {
     html * {
         display: none;
     }
@@ -98,6 +134,5 @@ hr {
         content: "This Page is not Mobile-Friendly... Open this Page on a Desktop to view it.";
         font-size: large;
         text-align: center;
-        vertical-align: middle;
     }
-} */
+}
