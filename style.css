@@ -81,9 +81,9 @@ table th, td {
 }
 
 .path {
-    width: 300px;
+    width: 320px;
     background-color: rgba(220, 220, 220, 0.5);
-    margin: 0px 0px 0.83em calc(50% - 175px);
+    margin: 0px 0px 0.83em calc(50% - 180px); /* calc(50% - (width/2 + 20px)) */
     text-align: center;
 }
 .borderContainer, .path {
@@ -126,7 +126,7 @@ table th, td {
     border-bottom-right-radius: var(--box-radius);
 }
 
-@media (max-width: 1311px), (max-height: 449px) {
+/* @media (max-width: 1311px), (max-height: 449px) {
     html * {
         display: none;
     }
@@ -135,4 +135,4 @@ table th, td {
         font-size: large;
         text-align: center;
     }
-}
+} */

@@ -10,7 +10,7 @@ header {
 }
 header > span {
     display: inline-block;
-    margin: 0px 4%;
+    margin: 0px 6%;
     text-align: left;
     vertical-align: middle;
     line-height: normal;
@@ -184,4 +184,15 @@ footer hr {
 }
 .footerBar > a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 1555px) {
+    header > span {
+        margin: 0px 4%;
+    }
+}
+@media (max-width: 1311px) {
+    header > span {
+        margin: 0px 2%;
+    }
 }
