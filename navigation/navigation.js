@@ -56,7 +56,6 @@ document.write(`<header class = "unselectable">
         <div class = "dropdownContainer" onclick = lockMenu("dAcademics") onmouseover = showMenu("dAcademics") onmouseout = hideMenu("dAcademics")>
         <button class = "dropdownButton" id = "bAcademics" title = "Academic Policies"> Academics </button>
         <div class = "dropdownContent" id = "dAcademics">
-            <a title = "Pre-Planned Events and Functions" href = "${rootPath}academics/calendar.html"> Annual Calendar </a>
             <a title = "Rules to be followed in the Library" href = "${rootPath}academics/library-rules.html"> Library Rules </a>
             <a title = "Results of Our School’s CBSE Annual Examination Attendees" href = "${rootPath}academics/results.html"> Results </a>
         </div>
@@ -66,24 +65,17 @@ document.write(`<header class = "unselectable">
         <div class = "dropdownContent" id = "dSchoolLife">
             <a title = "School Timings, and the Prescribed Uniform for Students" href = "${rootPath}life/timings-uniform.html"> Timings and Uniform </a>
             <a title = "Guidelines for Students’ Betterment" href = "${rootPath}life/guidelines.html"> Guidelines for Students </a>
+            <a title = "School Cabinet" href = "${rootPath}life/cabinet.html"> Students’ Cabinet </a>
             <a title = "Daily Prayers and School Anthem" href = "${rootPath}life/prayers-anthem.html"> Prayers and Anthem </a>
             <a title = "List of All Holidays in the Current Session" href = "${rootPath}life/holidays.html"> Holiday List </a>
         </div>
         </div>
-        <div class = "dropdownContainer" onclick = lockMenu("dNewsEvents") onmouseover = showMenu("dNewsEvents") onmouseout = hideMenu("dNewsEvents")>
-        <button class = "dropdownButton" id = "bNewsEvents" title = "Latest News & Upcoming School Events"> News & Events </button>
-        <div class = "dropdownContent" id = "dNewsEvents">
-            <a title = "Latest News regarding the School" href = "${rootPath}news-events/news.html"> News </a>
-            <a title = "Upcoming School Events" href = "${rootPath}news-events/events.html"> Upcoming Events </a>
-            <a title = "Annual Reports of All Activities performed Yearly" href = "${rootPath}news-events/report.html"> Annual Reports </a>
-        </div>
-        </div>
-        <a title = "Public Disclosure, as mandated by CBSE" href = "${rootPath}disclosure.html" style = "float: right;"> Mandatory Public Disclosure </a>
+        <a title = "Public Disclosure, as mandated by CBSE" href = "https://www.stpetersbharatpur.in/pdf/Mandatory-public-Disclosure.pdf" target = "_blank" style = "float: right;"> Mandatory Public Disclosure </a>
     </div>
 </nav>`);
 
-const dMenus = ["dAbout", "dAdmissions", "dAcademics", "dSchoolLife", "dNewsEvents"];
-let dMenuLocked = [0, 0, 0, 0, 0];
+const dMenus = ["dAbout", "dAdmissions", "dAcademics", "dSchoolLife"];
+let dMenuLocked = [0, 0, 0, 0];
 const dMenuHeights = [];
 for (let id of dMenus) {
     let element = document.getElementById(id);

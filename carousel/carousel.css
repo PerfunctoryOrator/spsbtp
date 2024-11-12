@@ -1,0 +1,128 @@
+:root {
+    --carousel-width: 200px;
+    --carousel-height: 263px;
+    --carousel-page-nav-btn-dim: 0.5em;
+    --carousel-caption-padding: 1em;
+    --carousel-caption-color: white;
+    --carousel-inner-spacing: 0.5em;
+    --carousel-pagination-margin: 1em;
+    --carousel-pagination-gap: 0.75em;
+    --carousel-pagination-btn-bg: rgba(220, 220, 220, 0.8);
+    --carousel-pagination-btn-active-bg: white;
+}
+
+.carousel {
+    width: var(--carousel-width);
+    min-height: var(--carousel-height);
+    margin: 20px 40px;
+}
+.carousel * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.carousel-inner {
+    overflow: hidden;
+    position: relative;
+    width: var(--carousel-width);
+    min-height: var(--carousel-height);
+    border-top-left-radius: var(--box-radius);
+    border-top-right-radius: var(--box-radius);
+}
+
+.carousel-title {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+.carousel-title + .carousel-description {
+    color: #888;
+    margin-top: 0;
+}
+
+.slide {
+    width: var(--carousel-width);
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    transition: transform 0.5s var(--emphasis-animation);
+}
+.slide-content {
+    position: relative;
+    height: 100%;
+}
+.slide-content > img {
+    width: var(--carousel-width);
+    height: var(--carousel-width);
+}
+.slide-caption {
+    width: calc(var(--carousel-width) - (2 * var(--carousel-caption-padding)));
+    position: absolute;
+    padding: var(--carousel-caption-padding);
+    bottom: 0;
+    margin: 0px;
+    text-align: center;
+    color: var(--carousel-caption-color);
+    background: var(--theme-colour);
+}
+.slide-detail {
+    position: absolute;
+    padding: calc(var(--carousel-caption-padding) / 2);
+    top: 0px;
+    left: 0px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom-right-radius: var(--box-radius);
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+}
+.carousel:hover .slide-detail {
+    opacity: 1;
+}
+
+.carousel-btn {
+    display: flex;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+.carousel-btn--prev-next {
+    position: absolute;
+    bottom: 18px;
+    transition: transform 0.1s ease-in-out;
+}
+.carousel-btn--prev-next:hover {
+    transform: scale(1.2);
+}
+.carousel-btn--prev {
+    left: var(--carousel-inner-spacing);
+}
+.carousel-btn--next {
+    right: var(--carousel-inner-spacing);
+}
+.carousel-pagination {
+    margin-bottom: var(--carousel-pagination-margin);
+    display: flex;
+    gap: var(--carousel-pagination-gap);
+    justify-content: center;
+    background-color: var(--theme-colour);
+    border-bottom-left-radius: var(--box-radius);
+    border-bottom-right-radius: var(--box-radius);
+    margin-bottom: 0px;
+}
+.carousel-pagination .carousel-btn {
+    background-color: var(--carousel-pagination-btn-bg);
+    height: var(--carousel-page-nav-btn-dim);
+    width: var(--carousel-page-nav-btn-dim);
+    margin-bottom: calc(var(--carousel-pagination-margin) / 2);
+    border-radius: 50%;
+    color: transparent;
+    transition:
+        transform 0.25s,
+        background-color 0.25s ease-in-out;
+}
+.carousel-pagination .carousel-btn--active {
+    transform: scale(1.5);
+    background-color: var(--carousel-pagination-btn-active-bg);
+}
