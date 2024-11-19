@@ -3,7 +3,7 @@ document.write(`<header class = "unselectable">
         <img src = "${rootPath}media-support/sps-logo.png" alt = "SPS Logo" style = "float: left; height: 55px; margin: 5px;" />
         <span style = "display: inline-block; font-size: xx-large;">
             St. Peter’s Sr. Sec. School
-        <span style = "display: block; font-size: large;"> Bharatpur (Rajasthan) </span>
+            <span style = "display: block; font-size: large;"> Bharatpur (Rajasthan) </span>
         </span>
     </span>
     <span title = "CBSE Affiliation Information">
@@ -15,8 +15,8 @@ document.write(`<header class = "unselectable">
         </svg>
         <span style = "display: inline-block; vertical-align: middle; line-height: 25px;">
             Affiliated to CBSE <br />
-            Affiliation No.: <span id = "affiliationNo" title = "Click to Copy to Clipboard" onclick = copyText("affiliationNo")> 1730118 </span> <br />
-            School Code: <span id = "schoolCode" title = "Click to Copy to Clipboard" onclick = copyText("schoolCode")> 10401 </span>
+            Affiliation No.: <span id = "affiliationNo" title = "Click to Copy to Clipboard" onclick = "copyText('affiliationNo')"> 1730118 </span> <br />
+            School Code: <span id = "schoolCode" title = "Click to Copy to Clipboard" onclick = "copyText('schoolCode')"> 10401 </span>
         </span>
     </span>
     <span id = "headerContactUs" title = "Contact Us">
@@ -29,46 +29,46 @@ document.write(`<header class = "unselectable">
         <span style = "display: inline-block; vertical-align: middle; line-height: 25px;">
             Phone: <a title = "Click to Call" href = "tel:+915644222700"> (+91) 56442 22700 </a> <br />
             E-mail: <a title = "Click to E-mail" href = "mailto:stpetersbharatpur@gmail.com"> stpetersbharatpur@gmail.com </a> <br />
-            Address: <span id = "shortAddress" title = "Click to Copy to Clipboard" onclick = copyText("shortAddress")> Bharatpur, Rajasthan (India) </span>
+            Address: <span id = "shortAddress" title = "Click to Copy to Clipboard" onclick = "copyText('shortAddress')"> Bharatpur, Rajasthan (India) </span>
         </span>
     </span>
 </header>
 <nav class = "unselectable" id = "navbarContainer">
     <div id = "navbar">
         <a title = "Homepage" href = "${rootPath}index.html"> Home </a>
-        <div class = "dropdownContainer" onclick = lockMenu("dAbout") onmouseover = showMenu("dAbout") onmouseout = hideMenu("dAbout")>
-        <button class = "dropdownButton" id = "bAbout" title = "All About Us"> About Us </button>
-        <div class = "dropdownContent" id = "dAbout">
-            <a title = "Our History" href = "${rootPath}about/history.html"> Our History </a>
-            <a title = "School Infrastructure" href = "${rootPath}about/infrastructure.html"> Infrastructure </a>
-            <a title = "School Management Committee" href = "${rootPath}about/management.html"> Management Committee </a>
-            <a title = "Teaching Faculty" href = "${rootPath}about/faculty.html"> Teaching Faculty </a>
+        <div class = "dropdownContainer" onclick = "lockMenu('dAbout')" onmouseover = "showMenu('dAbout')" onmouseout = "hideMenu('dAbout')">
+            <button class = "dropdownButton" id = "bAbout" title = "All About Us"> About Us </button>
+            <div class = "dropdownContent" id = "dAbout">
+                <a title = "Our History" href = "${rootPath}about/history.html"> Our History </a>
+                <a title = "School Infrastructure" href = "${rootPath}about/infrastructure.html"> Infrastructure </a>
+                <a title = "School Management Committee" href = "${rootPath}about/management.html"> Management Committee </a>
+                <a title = "Teaching Faculty" href = "${rootPath}about/faculty.html"> Teaching Faculty </a>
+            </div>
         </div>
+        <div class = "dropdownContainer" onclick = "lockMenu('dAdmissions')" onmouseover = "showMenu('dAdmissions')" onmouseout = "hideMenu('dAdmissions')">
+            <button class = "dropdownButton" id = "bAdmissions" title = "Everything related to Admissions"> Admissions </button>
+            <div class = "dropdownContent" id = "dAdmissions">
+                <a title = "Conditions for Admission of a Child" href = "${rootPath}admissions/policy.html"> Admission Policy </a>
+                <a title = "Pattern for Quarterly Payment of Students’ Fees" href = "${rootPath}admissions/fee-structure.html"> Fee Structure </a>
+                <a title = "Prescribed Books for All Classes" href = "${rootPath}admissions/book-list.html"> Book List </a>
+            </div>
         </div>
-        <div class = "dropdownContainer" onclick = lockMenu("dAdmissions") onmouseover = showMenu("dAdmissions") onmouseout = hideMenu("dAdmissions")>
-        <button class = "dropdownButton" id = "bAdmissions" title = "Everything related to Admissions"> Admissions </button>
-        <div class = "dropdownContent" id = "dAdmissions">
-            <a title = "Conditions for Admission of a Child" href = "${rootPath}admissions/policy.html"> Admission Policy </a>
-            <a title = "Pattern for Quarterly Payment of Students’ Fees" href = "${rootPath}admissions/fee-structure.html"> Fee Structure </a>
-            <a title = "Prescribed Books for All Classes" href = "${rootPath}admissions/book-list.html"> Book List </a>
+        <div class = "dropdownContainer" onclick = "lockMenu('dAcademics')" onmouseover = "showMenu('dAcademics')" onmouseout = "hideMenu('dAcademics')">
+            <button class = "dropdownButton" id = "bAcademics" title = "Academic Policies"> Academics </button>
+            <div class = "dropdownContent" id = "dAcademics">
+                <a title = "Rules to be followed in the Library" href = "${rootPath}academics/library-rules.html"> Library Rules </a>
+                <a title = "Results of Our School’s CBSE Annual Examination Attendees" href = "${rootPath}academics/results.html"> Results </a>
+            </div>
         </div>
-        </div>
-        <div class = "dropdownContainer" onclick = lockMenu("dAcademics") onmouseover = showMenu("dAcademics") onmouseout = hideMenu("dAcademics")>
-        <button class = "dropdownButton" id = "bAcademics" title = "Academic Policies"> Academics </button>
-        <div class = "dropdownContent" id = "dAcademics">
-            <a title = "Rules to be followed in the Library" href = "${rootPath}academics/library-rules.html"> Library Rules </a>
-            <a title = "Results of Our School’s CBSE Annual Examination Attendees" href = "${rootPath}academics/results.html"> Results </a>
-        </div>
-        </div>
-        <div class = "dropdownContainer" onclick = lockMenu("dSchoolLife") onmouseover = showMenu("dSchoolLife") onmouseout = hideMenu("dSchoolLife")>
-        <button class = "dropdownButton" id = "bSchoolLife" title = "Discover More About Student Life at Our School"> School Life </button>
-        <div class = "dropdownContent" id = "dSchoolLife">
-            <a title = "School Timings, and the Prescribed Uniform for Students" href = "${rootPath}life/timings-uniform.html"> Timings and Uniform </a>
-            <a title = "Guidelines for Students’ Betterment" href = "${rootPath}life/guidelines.html"> Guidelines for Students </a>
-            <a title = "School Cabinet" href = "${rootPath}life/cabinet.html"> Students’ Cabinet </a>
-            <a title = "Daily Prayers and School Anthem" href = "${rootPath}life/prayers-anthem.html"> Prayers and Anthem </a>
-            <a title = "List of All Holidays in the Current Session" href = "${rootPath}life/holidays.html"> Holiday List </a>
-        </div>
+        <div class = "dropdownContainer" onclick = "lockMenu('dSchoolLife')" onmouseover = "showMenu('dSchoolLife')" onmouseout = "hideMenu('dSchoolLife')">
+            <button class = "dropdownButton" id = "bSchoolLife" title = "Discover More About Student Life at Our School"> School Life </button>
+            <div class = "dropdownContent" id = "dSchoolLife">
+                <a title = "School Timings, and the Prescribed Uniform for Students" href = "${rootPath}life/timings-uniform.html"> Timings and Uniform </a>
+                <a title = "Guidelines for Students’ Betterment" href = "${rootPath}life/guidelines.html"> Guidelines for Students </a>
+                <a title = "School Cabinet" href = "${rootPath}life/cabinet.html"> Students’ Cabinet </a>
+                <a title = "Daily Prayers and School Anthem" href = "${rootPath}life/prayers-anthem.html"> Prayers and Anthem </a>
+                <a title = "List of All Holidays in the Current Session" href = "${rootPath}life/holidays.html"> Holiday List </a>
+            </div>
         </div>
         <a title = "Public Disclosure, as mandated by CBSE" href = "https://www.stpetersbharatpur.in/pdf/Mandatory-public-Disclosure.pdf" target = "_blank" style = "float: right;"> Mandatory Public Disclosure </a>
     </div>
