@@ -74,8 +74,11 @@ document.write(`<header class = "unselectable">
     </div>
 </nav>`);
 
+const darkModeCheck = matchMedia("(prefers-color-scheme: dark)");
 const dMenus = ["dAbout", "dAdmissions", "dAcademics", "dSchoolLife"];
 let dMenuLocked = [0, 0, 0, 0];
+let activeMenuButtonId = null;
+let rootCSS = getComputedStyle(document.querySelector(":root"));
 const dMenuHeights = [];
 for (let id of dMenus) {
     let element = document.getElementById(id);
@@ -84,6 +87,17 @@ for (let id of dMenus) {
     element.style.height = "";
 }
 
+function switchColourTheme() {
+    rootCSS = getComputedStyle(document.querySelector(":root"));
+    if (activeMenuButtonId) {
+        let menuButtonStyle = document.getElementById(activeMenuButtonId).style;
+        if (dMenuLocked.includes(1)) {
+            menuButtonStyle.backgroundColor = rootCSS.getPropertyValue("--browser-theme-colour");
+        } else {
+            menuButtonStyle.backgroundColor = rootCSS.getPropertyValue("--hover-colour");
+        }
+    }
+}
 function copyText(id) {
     navigator.clipboard.writeText(document.getElementById(id).innerText);
     alert(`The text “${document.getElementById(id).innerText}” has been copied to your Clipboard.`);
@@ -95,21 +109,27 @@ function hideAllMenus() {
         document.getElementById(idButton).style.backgroundColor = "";
         document.getElementById(id).style.height = "";
     }
+    activeMenuButtonId = null;
+
 }
 function showMenu(id) {
     if (!dMenuLocked.includes(1)) {
         let idButton = "b" + id.slice(1);
         document.getElementById(idButton).style.color = "black";
-        document.getElementById(idButton).style.backgroundColor = getComputedStyle(document.querySelector(":root")).getPropertyValue("--hover-colour");
+        document.getElementById(idButton).style.backgroundColor = rootCSS.getPropertyValue("--hover-colour");
         document.getElementById(id).style.height = dMenuHeights[dMenus.indexOf(id)];
+        activeMenuButtonId = idButton;
+
     }
 }
 function hideMenu(id) {
-    if (dMenuLocked[dMenus.indexOf(id)] == 0) {
+    if (!dMenuLocked.includes(1)) {
         let idButton = "b" + id.slice(1);
         document.getElementById(idButton).style.color = "";
         document.getElementById(idButton).style.backgroundColor = "";
         document.getElementById(id).style.height = "";
+        activeMenuButtonId = null;
+
     }
 }
 function lockMenu(id) {
@@ -122,11 +142,14 @@ function lockMenu(id) {
         // if menuLockStatus == 0, then after *see 2 lines above (currentLine - 2)*, it has to be shown
         let idButton = "b" + id.slice(1);
         document.getElementById(idButton).style.color = "black";
-        document.getElementById(idButton).style.backgroundColor = getComputedStyle(document.querySelector(":root")).getPropertyValue("--browser-theme-colour"); // to indicate that dropdown is locked
+        document.getElementById(idButton).style.backgroundColor = rootCSS.getPropertyValue("--browser-theme-colour"); // to indicate that dropdown is locked
         document.getElementById(id).style.height = dMenuHeights[dMenus.indexOf(id)];
+        activeMenuButtonId = idButton;
+
     }
 }
 
+darkModeCheck.addEventListener("change", (event) => switchColourTheme());
 document.addEventListener("click", function (event) {
     if (!(dMenus.includes("d" + event.target.id.slice(1)) || dMenus.includes(event.target.id))) {
         dMenuLocked = [0, 0, 0, 0, 0, 0];
