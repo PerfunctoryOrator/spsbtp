@@ -13,6 +13,9 @@
         <script> var rootPath = ""; </script>
         <script src = "navigation/navigation.js"></script>
         <style>
+            .closeButton:hover {
+                cursor: pointer;
+            }
             #about {
                 overflow: auto;
                 height: 331px;
@@ -40,6 +43,21 @@
     </head>
     <body>
         <!-- Header and Navigation Menu here -->
+        <div id = "front" style = "position: fixed; top: 0px; width: 100%; height: 100%; background-color: var(--shadow-colour); line-height: 1.5em; font-size: large;">
+            <div title = "Features" style = "position: absolute; top: 25%; left: 25%; width: 50%; height: 50%; background-color: var(--body-colour); border: 4px solid gainsboro; border-radius: var(--box-radius); overflow: auto;">
+                <h2 style = "margin: 16px 20px;">
+                    Features
+                    <button class = "closeButton" title = "Close" onclick = "delFeatureSection()" style = "display: block; float: right; font-size: large; border: none; border-radius: 50%; background-color: gainsboro;"> × </button>
+                </h2>
+                <hr color = "gainsboro" size = "4px" style = "margin: 7px 20px;" />
+                <ul class = "textContainer" style = "margin: 16px 20px; padding-left: 20px;">
+                    <li> You can lock the menu headers of the navigation bar (e.g., “About Us,” “Admissions,” etc.) by clicking on them. This feature allows you to leave any menu open without maintaining your mouse cursor over it. </li>
+                    <li> The entire website employs a dynamic theme that adapts its colour scheme dynamically based on whether the system’s “Dark Mode” is enabled or not. </li>
+                    <li> If any text element displays an underline when your cursor hovers over it, it indicates that you can copy it simply by clicking on it. Examples include the affiliation number and school code, which are displayed in the header. </li>
+                    <li> This website also incorporates a carousel. The credit for the (remixed) carousel engine is attributed to <a title = "Rahul C." href = "https://github.com/c99rahul/js-carousel" target = "_blank"> Rahul C.</a> The carousel can be accessed <a title = "Academics > Results" href = "academics/results.html#carousel"> here</a>. </li>
+                </ul>
+            </div>
+        </div>
         <div id = "body">
             <div class = "container">
                 <img src = "media-support/home-page/about.jpg" alt = "About.jpg" style = "float: left;" />
@@ -51,14 +69,14 @@
             <div class = "container">
                 <div class = "borderContainer" title = "Our Mission" style = "float: left; width: 45%;">
                     <b> Our Mission </b>
-                    <hr color = "gainsboro" size = "4px" style = "margin: 16px 0px 0px;" />
+                    <hr color = "gainsboro" size = "4px" />
                     <div class = "textContainer" style = "padding: 16px 0px;">
                         We strive to provide <b> High-Quality Education </b> for children in a <b> Safe, Respectful and Inclusive Environment </b> that builds a <b> Foundation for Life-Long Learning</b>.
                     </div>
                 </div>
                 <div class = "borderContainer" title = "Our Vision" style = "float: right; width: 45%;">
                     <b> Our Vision </b>
-                    <hr color = "gainsboro" size = "4px" style = "margin: 16px 0px 0px;" />
+                    <hr color = "gainsboro" size = "4px" />
                     <div class = "textContainer" style = "padding: 16px 0px;">
                         We envision and continuously strive for a community where <b> All Children Feel Loved, Respected and Encouraged </b> to develop to their <b> Fullest Potential</b>.
                     </div>
@@ -96,7 +114,7 @@
             <div class = "container">
                 <div class = "borderContainer" title = "Some Upcoming Events" style = "float: left; width: 45%;">
                     <b> Upcoming Events </b>
-                    <hr color = "gainsboro" size = "4px" style = "margin: 16px 0px 0px;" />
+                    <hr color = "gainsboro" size = "4px" />
                     <marquee class = "container" id = "events" scrollamount = "2" direction = "up" onmouseover = "stop();" onmouseout = "start();">
                         <div class = "borderContainer">
                             <img src = "media-support/news-events/events/children-s-day.png" alt = "Children’s Day.jpg" />
@@ -125,7 +143,7 @@
                 </div>
                 <div class = "borderContainer" title = "Latest News and Circulars" style = "float: right; width: 45%;">
                     <b> News and Circulars </b>
-                    <hr color = "gainsboro" size = "4px" style = "margin: 16px 0px 0px;" />
+                    <hr color = "gainsboro" size = "4px" />
                     <marquee class = "container" id = "events" scrollamount = "2" direction = "up" onmouseover = "stop();" onmouseout = "start();" style = "height: 187px;">
                         <div class = "borderContainer">
                             <img src = "media-support/news-events/circulars/chess.jpeg" alt = "Chess.png" />
@@ -146,6 +164,11 @@
             </div>
         </div>
         <!-- Footer Menu here -->
+        <script>
+            function delFeatureSection() {
+                document.getElementById("front").remove();
+            }
+        </script>
     </body>
     <script src = "navigation/footer.js"></script>
 </html>

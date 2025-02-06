@@ -46,11 +46,8 @@ document.write(`<footer class = "unselectable" id = "footer" onmouseenter = "tog
     </nav>
 </footer>
 <a id = "scrollTop" class = "unselectable" title = "Scroll to the Top of the Page" href = "#" onmouseenter = "toggleOpacity('scrollTop')" onmouseleave = "toggleOpacity('scrollTop')">
-    <svg width = "17.6582" height = "10.6406">
-        <g>
-            <rect height = "10.6406" opacity = "0" width = "17.6582" x = "0" y = "0" />
-            <path d = "M0.326951 8.00801C0.116991 8.21348 0 8.4873 0 8.80273C0 9.43886 0.493355 9.93573 1.12772 9.93573C1.44667 9.93573 1.74081 9.8162 1.94705 9.59393L9.13046 2.24197L8.17519 2.24197L15.3516 9.59393C15.5641 9.81795 15.86 9.93573 16.1691 9.93573C16.8017 9.93573 17.2969 9.43886 17.2969 8.80273C17.2969 8.48554 17.1816 8.21172 16.9682 8.00801L9.5326 0.398433C9.28573 0.137303 8.98534 0.00351548 8.65331 0C8.31504 0 8.0209 0.135546 7.76602 0.398433Z" fill-opacity = "0.85" />
-        </g>
+    <svg height = "24px" viewBox = "0 -960 960 960" width = "24px" style = "position: absolute; top: calc(50% - 12px); right: calc(50% - 12px);">
+        <path d = "M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z" />
     </svg>
 </a>`);
 var footer = document.getElementById("footer")

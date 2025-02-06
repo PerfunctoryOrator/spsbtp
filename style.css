@@ -44,6 +44,7 @@ body {
 }
 hr {
     border-radius: var(--box-radius);
+    margin: 16px 0px 0px;
 }
 table {
     overflow: hidden;
@@ -72,11 +73,11 @@ table th, td {
     margin: 16px;
     line-height: 1.5em;
 }
-#body a {
+#body a, #front a {
     color: var(--link-colour);
     text-decoration: none;
 }
-#body a:hover {
+#body a:hover, #front a:hover {
     text-decoration: underline;
 }
 
