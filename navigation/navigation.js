@@ -94,7 +94,7 @@ function switchColourTheme() {
 }
 function copyText(id) {
     navigator.clipboard.writeText(document.getElementById(id).innerText);
-    alert(`The text “${document.getElementById(id).innerText}” has been copied to your Clipboard.`);
+    alert(`The text ‘${document.getElementById(id).innerText}’ has been copied to your Clipboard.`);
 }
 function hideAllMenus() {
     for (let id of dMenus) {
