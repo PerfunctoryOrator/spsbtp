@@ -7,7 +7,8 @@ document.write(`<header class = "unselectable">
         </span>
     </span>
     <span title = "CBSE Affiliation Information">
-        <svg height = "24px" viewBox = "0 -960 960 960" width = "24px">
+        <!-- Icon sourced from Google Fonts (Material Icons) — Apache License 2.0 -->
+        <svg xmlns="http://www.w3.org/2000/svg" height = "24px" viewBox = "0 -960 960 960" width = "24px">
             <path d = "M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z" />
         </svg>
         <span style = "display: inline-block; vertical-align: middle; line-height: 25px;">
@@ -17,7 +18,8 @@ document.write(`<header class = "unselectable">
         </span>
     </span>
     <span id = "headerContactUs" title = "Contact Us">
-        <svg height = "24px" viewBox="0 -960 960 960" width = "24px">
+        <!-- Icon sourced from Google Fonts (Material Icons) — Apache License 2.0 -->
+        <svg xmlns="http://www.w3.org/2000/svg" height = "24px" viewBox="0 -960 960 960" width = "24px">
             <path d = "M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Z" />
         </svg>
         <span style = "display: inline-block; vertical-align: middle; line-height: 25px;">
