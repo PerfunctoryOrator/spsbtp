@@ -145,7 +145,7 @@ function lockMenu(id) {
     }
 }
 
-darkModeCheck.addEventListener("change", (event) => switchColourTheme());
+darkModeCheck.addEventListener("change", () => switchColourTheme());
 document.addEventListener("click", function (event) {
     if (!(dMenus.includes("d" + event.target.id.slice(1)) || dMenus.includes(event.target.id))) {
         dMenuLocked = [0, 0, 0, 0, 0, 0];
