@@ -46,7 +46,7 @@ document.write(`<footer class = "unselectable" id = "footer" onmouseenter = "tog
     </nav>
 </footer>
 <a id = "scrollTop" class = "unselectable" title = "Scroll to the Top of the Page" href = "#" onmouseenter = "toggleOpacity('scrollTop')" onmouseleave = "toggleOpacity('scrollTop')">
-    <!-- Icon sourced from Google Fonts (Material Icons) — Apache License 2.0 -->
+    <!-- Icon sourced from Google Fonts (Material Icons) — Apache licence 2.0 -->
     <svg xmlns="http://www.w3.org/2000/svg" height = "24px" viewBox = "0 -960 960 960" width = "24px" style = "position: absolute; top: calc(50% - 12px); right: calc(50% - 12px);">
         <path d = "M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z" />
     </svg>

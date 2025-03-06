@@ -26,7 +26,7 @@ To run this project locally:
 
 ## Credits
 
-- **Carousel Engine**: The carousel engine used on the ‘Academics > Results’ page is credited to [Rahul C.](https://github.com/c99rahul), and is covered under the MIT License.
+- **Carousel Engine**: The carousel engine used on the ‘Academics > Results’ page is credited to [Rahul C.](https://github.com/c99rahul), and is covered under the MIT licence.
 - **Icons**:
   - ‘Scroll to Top’ arrow icon: [Google’s Material Icons](https://fonts.google.com/icons)
   - ‘Info’ and ‘Contact’ icons in the header: [Google’s Material Icons](https://fonts.google.com/icons)
@@ -37,8 +37,8 @@ This website is a school project created by **Yashdeep Singh Fauzdar** and is no
 
 ## Licence
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-The icons used in this project are from [Google’s Material Icons](https://fonts.google.com/icons) and are licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0). See [LICENSE_Material_Icons](LICENSE_Material_Icons) for details. The original SVGs were slightly modified for integration purposes.
+This project is licensed under the MIT licence. See the [LICENSE](LICENSE) file for more details.
+The icons used in this project are from [Google’s Material Icons](https://fonts.google.com/icons) and are licensed under the [Apache licence 2.0](https://www.apache.org/licenses/LICENSE-2.0). See [LICENSE_Material_Icons](LICENSE_Material_Icons) for details. The original SVGs were slightly modified for integration purposes.
 
 ---
 
