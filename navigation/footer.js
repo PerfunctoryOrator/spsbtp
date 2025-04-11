@@ -40,7 +40,7 @@ document.write(`<footer class = "unselectable" id = "footer" onmouseenter = "tog
         <a title = "Ways to Contact Us" href = "${rootPath}footer/contact"> Contact Us </a>
         <a title = "Official Website of St. Peter’s School, Bharatpur" href = "https://www.stpetersbharatpur.in" target = "_blank"> Official School Website </a>
         <a title = "Official Website of the Agra Archdiocese, this School’s Parent Organisation" href = "https://www.agraarchdiocese.com/" target = "_blank"> Agra Archdiocese </a>
-        <a title = "This Website has been developed by Yashdeep Singh Fauzdar for his School Project" href = "${rootPath}footer/disclaimer.html"> Disclaimer and Credits </a>
+        <a title = "This Website has been developed by Yashdeep Singh Fauzdar for his School Project" href = "${rootPath}footer/disclaimer"> Disclaimer and Credits </a>
         <a title = "Souce Code is available here" href = "https://github.com/PerfunctoryOrator/spsbtp" target = "_blank"> Source Code </a>
         <span style = "float: right; padding: 16px 20px;"> India </span>
     </nav>
