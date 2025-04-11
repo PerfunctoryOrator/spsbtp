@@ -21,7 +21,7 @@ document.write(`<footer class = "unselectable" id = "footer" onmouseenter = "tog
         <div class = "footerNavGroup">
             <button> News & Events </button>
             <menu class = "footerNavContent">
-                <li> <a title = "Upcoming School Events" href = "${rootPath}footer/events.html"> Upcoming Events </a> </li>
+                <li> <a title = "Upcoming School Events" href = "${rootPath}footer/events"> Upcoming Events </a> </li>
                 <li> <a title = "Annual Report of All Activities performed Yearly" href = "https://www.stpetersbharatpur.in/pdf/Annual_Report.pdf" target = "_blank"> Annual Report </a> </li>
             </menu>
         </div>
@@ -29,15 +29,15 @@ document.write(`<footer class = "unselectable" id = "footer" onmouseenter = "tog
             <button> More </button>
             <menu class = "footerNavContent">
                 <li> <a title = "Photo and Video Gallery" href = "https://www.stpetersbharatpur.in/photo-gallery.aspx" target = "_blank"> Gallery </a> </li>
-                <li> <a title = "Recommendations to Parents to get the Best out of their Children" href = "${rootPath}footer/recommendations.html"> Recommendations to Parents </a> </li>
+                <li> <a title = "Recommendations to Parents to get the Best out of their Children" href = "${rootPath}footer/recommendations"> Recommendations to Parents </a> </li>
                 <li> <a title = "CampusCare by Entab" href = "https://spsb.campuscare.info" target = "_blank"> CampusCare </a> </li>
             </menu>
         </div>
     </nav>
     <nav class = "footerBar">
         <hr color = "white" size = "2px" />
-        <a title = "Map of the Website" href = "${rootPath}footer/map.html"> Site Map </a>
-        <a title = "Ways to Contact Us" href = "${rootPath}footer/contact.html"> Contact Us </a>
+        <a title = "Map of the Website" href = "${rootPath}footer/map"> Site Map </a>
+        <a title = "Ways to Contact Us" href = "${rootPath}footer/contact"> Contact Us </a>
         <a title = "Official Website of St. Peter’s School, Bharatpur" href = "https://www.stpetersbharatpur.in" target = "_blank"> Official School Website </a>
         <a title = "Official Website of the Agra Archdiocese, this School’s Parent Organisation" href = "https://www.agraarchdiocese.com/" target = "_blank"> Agra Archdiocese </a>
         <a title = "This Website has been developed by Yashdeep Singh Fauzdar for his School Project" href = "${rootPath}footer/disclaimer.html"> Disclaimer and Credits </a>
